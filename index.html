@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Tyler Johnston's Portfolio Homepage</title>
 </head>
 
 <body>
-    <p>Hello World!</p>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#">Tyler Johnston's Portfolio</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <a href="Recent Projects" class="nav-item nav-link">Recent Projects</a>
+                <a href="CS Courses" class="nav-item nav-link">CS Courses</a>
+                <a href="About" class="nav-item nav-link">About</a>
+                <a href="Contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h2 class="display-2 badge-primary">Summer 2021</h2>
+    <div class="container">
+        <iframe src="https://i.simmer.io/@Tyler_Johnston/tetro-breaker?skin=smg"
+            style="width:800px;height:600px;border:0"></iframe>
+    </div>
+    <!-- Want to add a carousel that displays pictures from my time in Blender -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
