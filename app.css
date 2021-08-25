@@ -1,3 +1,60 @@
 .fab, .fas {
     color:white;
 }
+
+.jumbotron h1 {
+    font-size:4em;
+}
+
+.jumbotron p {
+    font-size: 2em;
+}
+
+@media(max-width: 1200px){
+    .jumbotron h1 {
+        font-size:3em;
+    }
+
+    .jumbotron p {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 750px){
+    .jumbotron h1 {
+        font-size:2.5em;
+    }
+
+    .jumbotron p {
+        font-size: 1.25em;
+    }
+}
+
+@media(max-width: 575px){
+    .jumbotron {
+        text-align:center;
+    }
+    .jumbotron h1 {
+        font-size:2em;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
+        margin:0;
+    }
+}
+
+@media(max-width: 250px){
+
+    .jumbotron h1 {
+        font-size:1.5em;
+    }
+
+    .jumbotron p {
+        font-size: .75em;
+    }
+
+    .jumbtotron img {
+        display:none;
+    }
+}
