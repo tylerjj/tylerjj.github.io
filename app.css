@@ -1,5 +1,42 @@
-.fab, .fas {
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+.navbar .fab, .navbar .fas {
     color:white;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.badge {
+    padding: 10px;
+}
+div {
+    /* border: 1px solid black; */
+}
+
+.jumbotron, .jumbotron h1, .jumbotron img, .jumbotron p {
+    max-height:350px;
 }
 
 .jumbotron h1 {
@@ -10,17 +47,47 @@
     font-size: 2em;
 }
 
-@media(max-width: 1200px){
-    .jumbotron h1 {
-        font-size:3em;
-    }
+.cardgrid .card {
+    height:100%;
+}
 
-    .jumbotron p {
-        font-size: 1.5em;
+.cardgrid .card img {
+    max-width:250px;
+}
+
+#note {
+    /* max-width: 1200px; */
+    margin:50px 50px;
+}
+
+#contactinfo {
+    max-width: 540px;
+    height:100%;
+    margin-left:auto;
+}
+
+#headerInfo{
+    justify-content: center;
+}
+
+#pagefooter {
+    padding:10px;
+    background-color:lightgrey;
+    line-height:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    /* padding-bottom:1em; */
+}
+
+@media(max-width: 1400px){
+    #article {
+        max-width: 300px;
     }
 }
 
-@media(max-width: 750px){
+@media(max-width: 1200px){
+
     .jumbotron h1 {
         font-size:2.5em;
     }
@@ -28,20 +95,68 @@
     .jumbotron p {
         font-size: 1.25em;
     }
+
+}
+@media(max-width: 1075px){
+    #article {
+        max-width: 200px;
+    }
+}
+@media(max-width: 1000px){
+
+    #article {
+        max-width: 300px;
+    }
+
+    .jumbotron h1 {
+        font-size:2em;
+    }
+    .jumbotron p {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 775px){
+    #article {
+        max-width: 100%;
+    }
+    #article img {
+        max-width: 50%
+    }
+}
+@media(max-width: 750px){
+    .jumbotron h1 {
+        font-size:1.75em;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
+    }
 }
 
 @media(max-width: 575px){
     .jumbotron {
         text-align:center;
     }
+    .jumbotron img {
+        max-width:100px;
+    }
     .jumbotron h1 {
-        font-size:2em;
+        /* font-size:1.5em; */
     }
 
     .jumbotron p {
-        font-size: 1em;
+        /* font-size: .5em; */
         margin:0;
     }
+
+    #note {
+        margin:0px 0px;
+    }
+
+    #pagefooter {
+        font-size: .75em;
+      }
 }
 
 @media(max-width: 250px){
@@ -51,10 +166,26 @@
     }
 
     .jumbotron p {
-        font-size: .75em;
+        font-size: 1em;
     }
+}
 
-    .jumbtotron img {
-        display:none;
+@media(min-width:500px){
+    .carousel-item img {
+        max-width:55%;
+        height:auto;
+    }
+}
+
+@media(min-width: 1000px){
+    .carousel-item img {
+        max-width:45%;
+        height:auto;
+    }
+}
+@media(min-width: 1200px){
+    .carousel-item img {
+        max-width:40%;
+        height:auto;
     }
 }
