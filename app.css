@@ -20,6 +20,10 @@ html {
     }
   }
 
+.carousel-item img {
+    margin:auto;
+}
+
 .navbar .fab, .navbar .fas {
     color:white;
 }
