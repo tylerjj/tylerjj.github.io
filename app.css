@@ -50,7 +50,9 @@ div {
 .jumbotron p {
     font-size: 2em;
 }
-
+.jumbotron img {
+    width:50%;
+}
 .cardgrid .card {
     height:100%;
 }
