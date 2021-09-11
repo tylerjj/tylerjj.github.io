@@ -65,7 +65,7 @@ footer {
 }
 
 @media(max-width: 1400px){
-    #article {
+    .article {
         max-width: 300px;
     }
 }
@@ -82,13 +82,13 @@ footer {
 
 }
 @media(max-width: 1075px){
-    #article {
+    .article {
         max-width: 200px;
     }
 }
 @media(max-width: 1000px){
 
-    #article {
+    .article {
         max-width: 300px;
     }
 
@@ -101,10 +101,10 @@ footer {
 }
 
 @media(max-width: 775px){
-    #article {
+    .article {
         max-width: 100%;
     }
-    #article img {
+    .article img {
         max-width: 50%
     }
 }
@@ -134,11 +134,11 @@ footer {
         margin:0;
     }
 
-    #note {
+    .note {
         margin:0px 0px;
     }
 
-    #pagefooter {
+    footer {
         font-size: .75em;
       }
 }
