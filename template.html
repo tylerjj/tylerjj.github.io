@@ -15,132 +15,89 @@
 </head>
 
 <body>
-
-    <body class="d-flex flex-column min-vh-100">
-        <!-- HEADING -->
-        <div class="jumbotron jumbotron-fluid p-0 pb-2 m-0">
-            <div class="container-fluid">
-                <!-- <div class="row">
-                    <div class="col-12 p-0">
-                        <img src="photos/WIN_20210824_14_46_13_Pro (2).jpg"
-                            class="w-50 img-fluid rounded-circle shadow-lg d-inline d-sm-none ">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="https://tylerjj.github.io">Home</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/projects/index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/projects/summer2021/index.html">Summer 2021</a>
+                        <a class="dropdown-item" href="/projects/fall2021/index.html">Fall 2021</a>
                     </div>
-                </div> -->
-                <div class="row text-center align-items-center">
-                    <div class="col-12 col-sm-8">
-                        <h1 class="">Tyler Johnston's Portfolio</h1>
-                        <div class="row d-sm-none">
-                            <div class="col-12 p-0 d-sm-none">
-                                <img src="photos/WIN_20210824_14_46_13_Pro (2).jpg"
-                                    class="w-50 img-fluid rounded-circle shadow-lg d-inline d-sm-none ">
-                            </div>
-                        </div>
-                        <div id="headerInfo" class="row mx-auto">
-                            <div class="col-12-p-0">
-                                <p class="lead">Senior Computer Science Undergraduate at UW-Madison</p>
-                                <p class="lead">Expected Graduation: December 2021</p>
-                                <p class="lead">tylerj.johnston@outlook.com</p>
-                                <p class="lead">(641)-455-1968</p>
-                            </div>
-
-                        </div>
-                        <!-- <p class="lead">Senior Computer Science Undergraduate at UW-Madison</p>
-                        <p class="lead">Expected Graduation: December 2021</p>
-                        <p class="lead">tylerj.johnston@outlook.com</p>
-                        <p class="lead">(641)-455-1968</p> -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/learning/index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Learning
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/learning/coursehistory.html">Course History</a>
+                        <a class="dropdown-item" href="/learning/continuedlearning.html">Continued Learning Plan</a>
                     </div>
-
-                    <div class="col ">
-                        <img src="photos/WIN_20210824_14_46_13_Pro (2).jpg"
-                            class="img-fluid rounded-circle shadow-lg d-none d-sm-inline mw-100">
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/about/index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/about/aboutme.html">About Me</a>
+                        <a class="dropdown-item" href="/about/resume.html">Resume</a>
+                    </div>
+                </li>
+            </div>
+            <div class="form-inline ml-auto">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://github.com/tylerjj"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.facebook.com/johnston.tyler.583"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/tylerjohnst/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="mailto:tylerj.johnston@outlook.com"><i class="fas fa-envelope-square"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+    </nav>
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
-            <a class="navbar-brand" href="https://tylerjj.github.io">Home</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="expandme">
-                <div class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/projects/index.html" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/projects/summer2021/index.html">Summer 2021</a>
-                            <a class="dropdown-item" href="/projects/fall2021/index.html">Fall 2021</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/learning/index.html" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Learning
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/learning/coursehistory.html">Course History</a>
-                            <a class="dropdown-item" href="/learning/continuedlearning.html">Continued Learning Plan</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/about/index.html" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/about/aboutme.html">About Me</a>
-                            <a class="dropdown-item" href="/about/resume.html">Resume</a>
-                        </div>
-                    </li>
-                </div>
-                <div class="form-inline ml-auto">
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://github.com/tylerjj"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.facebook.com/johnston.tyler.583"><i class="fab fa-facebook"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.linkedin.com/in/tylerjohnst/"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="mailto:tylerj.johnston@outlook.com"><i class="fas fa-envelope-square"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Page footer -->
+    <footer id="pagefooter" class="text-muted">
+        <div class="row no-gutters align-items-center">
+            <div class="col-4 text-left">
+                <p>Tyler Johnston</p>
             </div>
-        </nav>
-
-        <!-- Page footer -->
-        <footer id="pagefooter" class="text-muted">
-            <div class="row no-gutters align-items-center">
-                <div class="col-4 text-left">
-                    <p>Tyler Johnston</p>
-                </div>
-                <div class="col-4 text-center">
-                    <div class="container-fluid pb-3"><a href="#">Jump to Top</a></div>
-                </div>
-                <div class="col-4 text-right">
-                    <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a></p>
-                </div>
+            <div class="col-4 text-center">
+                <div class="container-fluid pb-3"><a href="#">Jump to Top</a></div>
             </div>
-            <div class="row no-gutters align-items-center">
-                <div class="col text-center">
-                    <p>tylerj.johnston@outlook.com</p>
-                </div>
+            <div class="col-4 text-right">
+                <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a></p>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"></script>
-    </body>
+        </div>
+        <div class="row no-gutters align-items-center">
+            <div class="col text-center">
+                <p>tylerj.johnston@outlook.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
