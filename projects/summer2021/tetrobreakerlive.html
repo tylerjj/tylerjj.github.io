@@ -86,12 +86,12 @@
     <!-- Main Body of Content -->
     <div class="container-fluid bg-dark">
 
-        <div class="row">
+        <div class="row row-fluid">
             <!--Article Content-->
-            <div class="col">
+            <div class="col col-md-6">
                 <!-- Article Header-->
                 <div class="container-fluid">
-                    <div class="jumbotron">
+                    <div class="jumbotron mb-1">
                         <h2>Tetro Breaker Game</h2>
                         <h6 class="text-muted">Author: Tyler Johnston</h6>
                         <h6 class="text-muted">Tools: Unity, Visual Studio, C#</h6>
@@ -100,16 +100,9 @@
                         </h6>
                     </div>
                 </div>
-                <div class="container-fluid border rounded">
-                    <div class="d-flex justify-content-center container-fluid my-5">
-                        <div class="embed-responsive embed-responsive-4by3" style="max-width:600px; max-height:400px;">
-                            <iframe src="https://i.simmer.io/@Tyler_Johnston/tetro-breaker?skin=smg"
-                                style="max-width:600px; max-height:400px"></iframe>
-                        </div>
-                    </div>
-
+                <div class="container-fluid rounded text-light">
                     <div class="container-fluid no-gutters rounded border p-2">
-                        <p><span class="badge badge-dark">Game Description:</span> My take on Gamedev.TV's Block
+                        <p><span class="badge badge-secondary">Game Description:</span> My take on Gamedev.TV's Block
                             Breaker
                             game prototype. Control paddle with
                             mouse.
@@ -118,7 +111,7 @@
                             to
                             move to the next level.</p>
 
-                        <p><span class="badge badge-dark">Known Bugs:</span> Ball Loops at edge of screen, Erratic
+                        <p><span class="badge badge-secondary">Known Bugs:</span> Ball Loops at edge of screen, Erratic
                             Velocity
                             when dynamic rigidbodies (balls,
                             yellow
@@ -127,13 +120,14 @@
                             to
                             the next level.</p>
 
-                        <p><span class="badge badge-dark">Known Design Flaw(s)</span> Failed to make use of Object
+                        <p><span class="badge badge-secondary">Known Design Flaw(s)</span> Failed to make use of Object
                             Pooling
                             in the background Tetromino Spawner that
                             is
                             on the Start Menu, Game Over, and Game Won screens.</p>
 
-                        <p><span class="badge badge-dark">Final Commentary:</span> Every feature (assets not included)
+                        <p><span class="badge badge-secondary">Final Commentary:</span> Every feature (assets not
+                            included)
                             that
                             is not part of the base Block Breaker
                             course, I coded from scratch. Jank and all, these were my attempts at implementation. I'm
@@ -145,6 +139,14 @@
                             time for me to move on.</p>
                     </div>
 
+                </div>
+            </div>
+            <div class="d-flex col-12 col-md-6 align-items-center">
+                <div class="d-flex justify-content-center container-fluid my-2">
+                    <div class="embed-responsive embed-responsive-4by3" style="max-width:600px; max-height:400px;">
+                        <iframe src="https://i.simmer.io/@Tyler_Johnston/tetro-breaker?skin=smg"
+                            style="max-width:600px; max-height:400px"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
