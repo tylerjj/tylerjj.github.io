@@ -66,6 +66,7 @@
             </div>
         </div>
     </nav>
+    <!--Breadcrumb-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
@@ -74,31 +75,145 @@
             <li class="breadcrumb-item active">Entertaining The AI</li>
         </ol>
     </nav>
-    <!-- Page footer -->
-    <footer class="pagefooter text-muted">
-        <div class="row no-gutters align-items-center">
-            <div class="col-4 text-left">
-                <p>Tyler Johnston</p>
+    <!-- Main Body of Content -->
+    <div class="container-fluid">
+        <!-- Section Navigation For Medium or Smaller Screens -->
+        <div class="row d-flex d-md-none mb-3">
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Section Navigation
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/projects/summer2021/tetrobreaker.html">Tetro Breaker</a>
+                        <a class="dropdown-item" href="/projects/summer2021/entertainingtheai.html">Entertaining The AI
+                            (Number Guessing Game)</a>
+                        <a class="dropdown-item" href="/projects/summer2021/cavernquest.html">Cavern Quest (Choose Your
+                            Own Path)</a>
+                        <a class="dropdown-item" href="/projects/summer2021/gitsmart.html">Get Git Smart Course
+                            Commentary</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <div class="container-fluid pb-3"><a href="entertainingtheai.html">Jump to Top</a></div>
-            </div>
-            <div class="col-4 text-right">
-                <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a></p>
+            <div class="d-flex align-items-center col col-sm-6 ">
+                <a href="/projects/summer2021/tetrobreakerlive.html">Play
+                    Game (Mobile Not Supported)</a>
             </div>
         </div>
-        <div class="row no-gutters align-items-center">
-            <div class="col text-center">
-                <p>tylerj.johnston@outlook.com</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Article Content-->
+            <div class="col col-md-8">
+                <!-- Article Header-->
+                <div class="container-fluid">
+                    <div class="jumbotron">
+                        <h2>Number Wizard (Entertaining The AI)</h2>
+                        <h6 class="text-muted">Author: Tyler Johnston</h6>
+                        <h6 class="text-muted">Tools: Unity, Visual Studio, C#</h6>
+                        <h6 class="text-muted font-size-xxs"><a
+                                href="https://github.com/tylerjj/EntertainingTheAI">Github
+                                Repo</a>
+                        </h6>
+                    </div>
+                </div>
+                <!--Article Video-->>
+                <div class="container-fluid mb-4">
+                    <h3>
+                        AutoPlay Demo:
+                    </h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="/videos/Number Wizard UI 2021-06-06 19-16-01.mp4" type="video/mp4">
+                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="container-fluid rounded border  mb-3">
+                    <p><span class="badge badge-dark">Game Description:</span></p>
+                    <p><span class="text-danger">Very</span> simple number-guessing microgame that was used as my
+                        first-exposure to
+                        Unity's UI elements. You pick a number, the computer will try to guess your number. You'll tell
+                        the computer
+                        whether it is correct, if the number is higher, or if the number is lower. If the computer was
+                        incorrect, it'll keep guessing until it finally picks your number.</p>
+                </div>
+
+            </div> <!-- Section Navigation for larger screens -->
+            <div class="d-none d-md-inline col-3">
+                <div class="container-fluid border rounded border-dark bg-dark text-light text-center py-2">
+                    <h5>Section Navigation</h5>
+                    <hr class="border w-100">
+                    <ul
+                        class="nav flex-column border rounded border-dark align-content-center align-items-center bg-light text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/projects/summer2021/tetrobreaker.html">Tetro Breaker
+                                (Block Breaking Game)</a>
+                        </li>
+                        <hr class="border w-75">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects/summer2021/entertainingtheai.html">Entertaining The
+                                AI
+                                (Number Guessing Game)</a>
+                        </li>
+                        <hr class="border w-75">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects/summer2021/cavernquest.html">Cavern Quest (Choose
+                                Your
+                                Own Path)</a>
+                        </li>
+                        <hr class="border w-75">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/projects/summer2021/gitsmart.html">Get Git Smart Course
+                                Commentary</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-fluid mb-4">
+                    <div class="container-fluid d-none d-md-inline">
+                        <h3>Live Game:</h3>
+                        <p>TODO: Need to go back into Unity, do a WebGL build, upload to simmer.io, and then embed that
+                            link here.
+                        </p>
+                        <button type="button" class="btn btn-dark"><a href="#">Play
+                                Game</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+        <!-- Page footer -->
+        <footer class="pagefooter text-muted">
+            <div class="row no-gutters align-items-center">
+                <div class="col-4 text-left">
+                    <p>Tyler Johnston</p>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="container-fluid pb-3"><a href="/projects/summer2021/entertainingtheai.html">Jump to
+                            Top</a></div>
+                </div>
+                <div class="col-4 text-right">
+                    <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a></p>
+                </div>
+            </div>
+            <div class="row no-gutters align-items-center">
+                <div class="col text-center">
+                    <p>tylerj.johnston@outlook.com</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
