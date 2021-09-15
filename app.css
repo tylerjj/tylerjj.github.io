@@ -17,6 +17,10 @@ div {
     /* border: 1px solid black; */
 }
 
+.card:hover {
+    box-shadow: 10px 5px 5px grey;
+}
+
 .jumbotron, .jumbotron h1, .jumbotron img, .jumbotron p {
     max-height:350px;
 }
