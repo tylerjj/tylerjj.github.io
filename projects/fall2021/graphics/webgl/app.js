@@ -1,7 +1,7 @@
 function start() {
 
     // Get canvas, WebGL context, twgl.m4
-    var canvas = document.getElementById("mycanvas");
+    var canvas = document.getElementById("myCanvas");
     var gl = canvas.getContext("webgl");
 
     // Sliders at center
