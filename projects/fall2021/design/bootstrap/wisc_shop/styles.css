@@ -1,0 +1,62 @@
+th {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    padding: 5px 5px 5px 5px;
+}
+
+.left-sidebar {
+    /* margin-top:56px; */
+    max-height: 500px;
+    /* padding-top:56px; */
+}
+
+body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#shop-title {
+    font-family: 'Crimson Text', serif;
+    font-size:xx-large;
+}
+
+#user-dropdown {
+    font-family: 'Signika Negative', sans-serif;
+    font-size:x-large;
+    color:white;
+}
+
+#account-name p, #account-phone p, #account-email p, #account-subscriptions p {
+    font-weight:bold;
+}
+span {
+    font-weight:normal;
+}
+.left-sidebar .nav-item {
+    padding:5px;
+    margin:5px;
+}
+
+.card {
+    height:100%;
+}
+
+.card img {
+    /* max-width:250px;
+    max-height:250px; */
+}
+
+.navbar {
+    background-color: #b82c2c;
+    color:white;
+}
+
+.navbar span {
+    color:white;
+}
+
+footer, footer a {
+    background-color: #b82c2c;
+    color:white;
+}

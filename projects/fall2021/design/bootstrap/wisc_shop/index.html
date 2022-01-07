@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Javascript Beta: Badger Shop</title>
+</head>
+
+<body>
+
+    <!-- Bootstrap Navbar -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/uw-crest.png" width="38.5" height="61.08" class="d-inline-block align-top" alt="">
+            <span id="shop-title" class="text-light pl-5">Badger Shop</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="user-dropdown">Hello, Badger</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./account.html">Account</a>
+                        <a class="dropdown-item" href="./orders.html">Orders</a>
+                        <a class="dropdown-item" href="./submem.html">Memberships and Subscriptions</a>
+                        <a class="dropdown-item text-muted" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Main Content Grid -->
+    <div id="main-content-grid" class="row mt-5">
+        <div id="sidebar-home" class="left-sidebar sticky-top col-3">
+            <ul class="nav flex-column border shadow mb-5">
+                <li class="nav-item">
+                    <p>Filter By:</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Age</a>
+                        </li>
+                </li>
+                <hr class="w-100">
+                <li class="nav-item">
+                    <ul class="nav flex-column">
+                        <li class="nav-item text-left">
+                            <p class="lead">Contact Us</p>
+                            <ul class="nav flex-column text-muted">
+                                <li class="nav-item">
+                                    (444) 444-4321
+                                </li>
+                                <li class="nav-item">
+                                    badgershop@wisc.edu
+                                </li>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="sales-content" class="col-9">
+            <div id="focal-point-carousel" class="container-fluid">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/flash-sale.jpg" class="d-block m-auto" width="800" height="500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/welcome.jpg" class="d-block m-auto" width="800" height="500">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="products" class="container-fluid mt-5">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-4">
+                        <div class="card shadow">
+                            <img src="images/backpack2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="product-name card-title rounded p-3">Badger Shop Backpack</h5>
+                                <p class="product-description card-text rounded p-3">The leader in comfortable
+                                    backpacks,
+                                    Badger Shop Backpacks come in a variety of colors.</p>
+                                <p class="product-price card-text text-right">
+                                    <span class="badge-pill badge-danger">$49.99</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow">
+                            <img src="images/beer.jpeg" class="card-img-top" alt="...">
+                            <div class="product-text card-body">
+                                <h5 class="product-name card-title p-3">Bucky Brew</h5>
+                                <p class="product-description card-text p-3">Have a greek party this weekend?
+                                    Purchase one
+                                    of our world-renown
+                                    kegs! Only at Badger Shop! </p>
+                                <p class="product-price card-text text-right"><span
+                                        class="badge-pill badge-danger">$118.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow">
+                            <img src="images/laptop2.jpeg" class="card-img-top" alt="...">
+                            <div class="product-text card-body">
+                                <h5 class="product-name card-title p-3">Budget Laptops</h5>
+                                <p class="product-description card-text p-3">Don't break the bank with one of our
+                                    high
+                                    performing laptops. Quantity Limited!</p>
+                                <p class="product-price card-text text-right"><span
+                                        class="badge-pill badge-danger">$99.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="mt-5 w-100">
+        <nav class="navbar navbar-light justify-content-center d-inline-block w-100">
+            <span id="footer-home" class="d-block text-center">
+                <p id="footer-shop-name" class="lead text-light">Badger Shop</p>
+                <p id="footer-jump" class="text-muted">
+                    <a href="#" class="text-light">Jump to Top</a>
+                </p>
+            </span>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
