@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://tylerjj.github.io">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpMeFind</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/8c54e2b80b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="https://tylerjj.github.io">Home</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="expandme">
+            <div class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/projects/index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/projects/summer2021/index.html">Summer 2021</a>
+                        <a class="dropdown-item" href="/projects/fall2021/index.html">Fall 2021</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/learning/index.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Learning
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/learning/coursehistory.html">Course History</a>
+                        <a class="dropdown-item" href="/learning/continuedlearning.html">Continued Learning Plan</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+            </div>
+            <div class="form-inline ml-auto">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://github.com/tylerjj"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.facebook.com/johnston.tyler.583"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/tylerjohnst/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="col">
+                        <a href="mailto:tylerj.johnston@outlook.com"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Breadcrumb Section-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/projects/index.html">Projects</a></li>
+            <li class="breadcrumb-item"><a href="/projects/fall2021">Fall 2021</a></li>
+            <li class="breadcrumb-item"><a href="/projects/fall2021/mobile/">Android Studio Development</a></li>
+            <li class="breadcrumb-item active">HelpMeFind: Campus Resource Compass</li>
+        </ol>
+    </nav>
+    <!-- Main Body of Content -->
+    <div class="container-fluid">
+        <!-- Section Navigation For Medium or Smaller Screens -->
+        <div class="row d-inline d-md-none">
+            <div class="container-fluid border rounded border-dark bg-dark text-light py-2">
+                <h5>Android Studio Project Directories</h5>
+                <hr class="border w-100">
+                <ul class="mx-10 nav flex-row border rounded border-dark bg-light text-dark">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="/projects/fall2021/mobile/help_me_find.html">HelpMeFind: Campus
+                            Resource Compass</a>
+                    </li>
+                    <hr class="border w-100">
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Article Content-->
+                <div class="col col-md-8">
+                    <!-- Article Header-->
+                    <div class="container-fluid">
+                        <div class="jumbotron">
+                            <h2>HelpMeFind</h2>
+                            <h6 class="text-muted">Author: Tyler Johnston</h6>
+                            <h6 class="text-muted">Team Members: Samuel Moon, Aidan Monty, Tyler Johnston</h6>
+                            <h6 class="text-muted">Tools: Android Studio, Java, GoogleMaps API, Firebase</h6>
+                            <h6 class="text-muted font-size-xxs"><a href="https://github.com/smoonUW/HelpMeFind">Github
+                                    Repo</a>
+                            </h6>
+                            <h6 class="text-muted">Date Posted: 01/06/2021</h6>
+                        </div>
+                    </div>
+                    <!--Article Video-->
+                    <!-- TODO -->
+                    <!-- <div class="container-fluid mb-4">
+                    <h3>
+                        Demo:
+                    </h3>
+                    <video width="100%" height="auto" controls>
+                        <source src="/videos/Text101 2021-06-06 19-26-55.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="container-fluid rounded border mb-3 p-2">
+                    <p><span class="badge badge-dark">Game Description:</span></p>
+                    <p>This was my take on the Text 101 project in GameDev.tv's 2D Unity Course.</p>
+                    <p><span class="text-danger">Very</span> simple choose-your-own-path microgame that was used as my
+                        first-exposure to
+                        Unity's Scriptable Objects.</p>
+                    <p>Effectively, we made a state-machine. See diagram below:</p>
+                    <span class="text-center">
+                        <img id="stateimg" class="img-fluid"
+                            src="/photos/StateDesign.sdr - SmartDraw 2020 6_6_2021 7_31_43 PM (2).png" alt="">
+                    </span>
+                </div> -->
+                </div>
+                <!-- Section Navigation for larger screens -->
+                <div class="d-none d-md-inline col-3">
+                    <div class="container-fluid border rounded border-dark bg-dark text-light text-center py-2">
+                        <h5>Project Directories</h5>
+                        <hr class="border w-100">
+                        <ul
+                            class="nav flex-column border rounded border-dark align-content-center align-items-center bg-light text-dark">
+                            <hr class="border w-75">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/projects/fall2021/mobile/help_me_find.html">HelpMeFind:
+                                    Campus Resource Compass</a>
+                            </li>
+                            <hr class="border w-75">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page footer -->
+    <footer class="pagefooter text-muted">
+        <div class="row no-gutters align-items-center">
+            <div class="col-4 text-left">
+                <p>Tyler Johnston</p>
+            </div>
+            <div class="col-4 text-center">
+                <div class="container-fluid pb-3"><a href="/projects/fall2021/mobile/help_me_find.html">Jump to
+                        Top</a>
+                </div>
+            </div>
+            <div class="col-4 text-right">
+                <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap
+                        4</a>
+                </p>
+            </div>
+        </div>
+        <div class="row no-gutters align-items-center">
+            <div class="col text-center">
+                <p>tylerj.johnston@outlook.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
