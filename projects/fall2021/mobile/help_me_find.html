@@ -156,8 +156,173 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="container-fluid rounded border mb-3 p-2">
+                    <div class="container-fluid  mb-3 p-2">
                         <p><span class="badge badge-dark">Project Description:</span></p>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 864px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/launch_screen.png" width="203.5"
+                                        height="432" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Welcome Activity</h5>
+                                        <p class="card-text">The welcome screen is our landing page for the app,
+                                            designed to visually allude to our app's purpose. No work is done, and no
+                                            permission requests are made at this point.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 1296px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FilterSearch Activity</h5>
+                                        <p class="card-text">Here, users choose what
+                                            types of resources to
+                                            display and the search
+                                            radius distance. These
+                                            selections are used to
+                                            query the Firestore
+                                            database for a list of
+                                            resources, which get
+                                            passed to MapView.
+                                            Location permissions
+                                            requests are made here to
+                                            get the user’s current
+                                            location.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/menu_1.png" width="203.5" height="432"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/menu_2.png" width="203.5" height="432"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 1296px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/maps_1.png" width="203.5" height="432"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/maps_2.png" width="203.5" height="432"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MapView Activity</h5>
+                                        <p class="card-text">
+                                            The MapView activity displays
+                                            the resources of the type(s)
+                                            selected within the radius
+                                            chosen in FilterSearch. The
+                                            radius selected also controls the
+                                            zoom on the Map. The
+                                            resources and the user’s current
+                                            location are displayed as custom
+                                            Google Maps markers with their
+                                            type above. When a user
+                                            selects a resource, the color
+                                            changes from red to green and
+                                            the bottom navigator adds a
+                                            “Select” option.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 864px;">
+                            <div class="row no-gutters">
+
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wayfinder/Compass Activity</h5>
+                                        <p class="card-text">In the Wayfinder Activity, an arrow points towards
+                                            the selected resource whose name is displayed at
+                                            the top of the user’s screen. When GPS location is
+                                            updated the distance from the resource is
+                                            displayed below the navigation arrow. Once a user
+                                            is within 65 feet of the given resource’s GPS
+                                            coordinates the distance text changes to “The
+                                            resource should be in the building in front of you!”
+                                            By selecting the “Arrived” icon in the bottom
+                                            navigator a user is taken to the Feedback activity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/wayfinder.png" width="203.5" height="432"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 864px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/feedback_form.png" width="203.5"
+                                        height="432" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Feedback Activity</h5>
+                                        <p class="card-text">In the Feedback Activity a user is asked to report
+                                            whether the resource is inaccessible or
+                                            unavailable, with space for explanation. This
+                                            feedback can then be used by an administrator on
+                                            the website to remove invalid resources from the
+                                            database. The user can also add any additional
+                                            feedback on the resource in the next text area.
+                                            They have the option to either submit feedback or
+                                            return to the FilterSearch activity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
+                        <div class="card mb-3 border-0 shadow-none" style="max-height: 864px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/projects/fall2021/mobile/photos/administration.png" width="400"
+                                        height="300" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Administrative Site</h5>
+                                        <p class="card-text">This is a web-based tool
+                                            to allow administrators
+                                            to interact with the
+                                            Firestore database. Here
+                                            an administrator can add
+                                            a new resource, decline
+                                            or accept new user
+                                            comments, and resolve
+                                            critical problems on
+                                            resources reported by
+                                            users. The administrator
+                                            can also remove
+                                            resources from the
+                                            database.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border w-100">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius nemo. Earum a sit
                             mollitia harum odio quo neque iste ratione vitae non, soluta aliquid doloribus alias
                             minus
