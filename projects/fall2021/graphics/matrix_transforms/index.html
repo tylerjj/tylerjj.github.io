@@ -116,6 +116,8 @@
                         <div class="jumbotron">
                             <h2>Matrix Transforms (Alternate Implementation of Hierarchal Modeling Project)</h2>
                             <h6 class="text-muted">Author: Tyler Johnston</h6>
+                            <h6 class="text-muted">Script: <a
+                                    href="/projects/fall2021/graphics/matrix_transforms/hw3.js">hw3.js</a></h6>
                             <h6 class="text-muted">Tools: Javascript, HTML, Canvas 2D, GL Matrix</h6>
                             <h6 class="text-muted">Date Posted: 01/06/2021</h6>
                         </div>
@@ -125,43 +127,88 @@
                             <canvas id="myCanvas" width="500px" height="500px"
                                 style="border: 1px black solid;"></canvas>
                         </div>
-                        <div class="col">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut sint quam
-                                dolore
-                                cupiditate
-                                velit vero aspernatur accusamus alias, corrupti odit sapiente natus sequi nobis
-                                rerum
-                                vel cum
-                                tenetur officia.
-                                Eius quidem consectetur ratione. Totam laborum qui vel voluptatibus saepe, similique
-                                debitis
-                                neque?
-                                Commodi est voluptatum maxime dolor, illum cupiditate, modi impedit explicabo alias
-                                eos
-                                beatae
-                                aliquid aspernatur architecto nobis.
-                                Officiis voluptatem, facere asperiores tempora odit animi velit nostrum eius
-                                doloribus
-                                repellendus,
-                                neque quo accusamus qui magnam laborum eligendi amet hic recusandae minima! Labore
-                                quibusdam
-                                unde
-                                illo exercitationem earum explicabo.
-                                Consequatur iste facere corporis culpa magni, amet repellat deleniti est velit
-                                placeat
-                                ex
-                                delectus
-                                sit, hic quam exercitationem consequuntur facilis repellendus quidem unde vero
-                                fugiat
-                                animi
-                                accusamus illum omnis. Ducimus?
-                                Adipisci quae nobis exercitationem facilis dolore nesciunt quibusdam quo ea commodi
-                                iste?
-                                Obcaecati
-                                minima recusandae, possimus cupiditate ea est reiciendis laborum voluptates? Soluta
-                                autem
-                                laboriosam
-                                quos consequatur amet recusandae ipsa!</p>
+                        <div class="col mt-3">
+                            <h3>Project Description</h3>
+                            <div class="ml-3">
+                                <p>
+                                    Utilizing GL-Matrix libraries, I created a soft-copy of my <a
+                                        href="/projects/fall2021/graphics/hierarchal_modeling/">hierarchal modeling
+                                        project</a>.
+                                </p>
+                                <p>The intent here was to replace canvas context changes with matrix transforms.</p>
+                            </div>
+                            <h3>Outline of app.js</h3>
+                            <div class="ml-3">
+                                <ul>
+                                    <li>
+                                        <p> drawCircle():
+                                        <ul>
+                                            <li> Original code from HW2. Draws a circle of a specific color.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> drawChainLink():
+                                        <ul>
+                                            <li> Original code from HW2. Draws what appears to be a metal ring.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> moveToTransform():
+                                        <ul>
+                                            <li>
+                                                Used only in testing out the matrix transforms.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> lineToTransform():
+                                        <ul>
+                                            <li> Used only in testing out the matrix transforms.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> arcTransform():
+                                        <ul>
+                                            <li> Utilized matrix transforms to perform context.arc</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> drawCircleTx():
+                                        <ul>
+                                            <li> Utilized arcTransform to accomplish same functionality as drawCircle
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> drawChainLinkTx():
+                                        <ul>
+                                            <li> Utilized arcTransform to accomplish same functionality as drawChainLink
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>handleDirectionAndSpeed():
+                                        <ul>
+                                            <li> This is the code that increments/decrements our global position each
+                                                frame.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                </ul>
+
+
+
+
+
+
+                            </div>
                         </div>
                     </div>
 
