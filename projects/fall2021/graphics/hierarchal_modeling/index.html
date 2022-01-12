@@ -116,6 +116,8 @@
                         <div class="jumbotron">
                             <h2>Canvas 2D: Hierarchal Modeling</h2>
                             <h6 class="text-muted">Author: Tyler Johnston</h6>
+                            <h6 class="text-muted">Script: <a
+                                    href="/projects/fall2021/graphics/hierarchal_modeling/app.js">app.js</a></h6>
                             <h6 class="text-muted">Tools: Javascript, HTML, Canvas 2D</h6>
                             <h6 class="text-muted">Date Posted: 01/06/2021</h6>
                         </div>
@@ -125,43 +127,120 @@
                             <canvas id="myCanvas" width="800px" height="800px"
                                 style="border: 1px black solid;"></canvas>
                         </div>
-                        <div class="col">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut sint quam
-                                dolore
-                                cupiditate
-                                velit vero aspernatur accusamus alias, corrupti odit sapiente natus sequi nobis
-                                rerum
-                                vel cum
-                                tenetur officia.
-                                Eius quidem consectetur ratione. Totam laborum qui vel voluptatibus saepe, similique
-                                debitis
-                                neque?
-                                Commodi est voluptatum maxime dolor, illum cupiditate, modi impedit explicabo alias
-                                eos
-                                beatae
-                                aliquid aspernatur architecto nobis.
-                                Officiis voluptatem, facere asperiores tempora odit animi velit nostrum eius
-                                doloribus
-                                repellendus,
-                                neque quo accusamus qui magnam laborum eligendi amet hic recusandae minima! Labore
-                                quibusdam
-                                unde
-                                illo exercitationem earum explicabo.
-                                Consequatur iste facere corporis culpa magni, amet repellat deleniti est velit
-                                placeat
-                                ex
-                                delectus
-                                sit, hic quam exercitationem consequuntur facilis repellendus quidem unde vero
-                                fugiat
-                                animi
-                                accusamus illum omnis. Ducimus?
-                                Adipisci quae nobis exercitationem facilis dolore nesciunt quibusdam quo ea commodi
-                                iste?
-                                Obcaecati
-                                minima recusandae, possimus cupiditate ea est reiciendis laborum voluptates? Soluta
-                                autem
-                                laboriosam
-                                quos consequatur amet recusandae ipsa!</p>
+                        <div class="col" style="max-width: 700px;">
+                            <hr class="border w-100">
+                            <h3>Project Description:</h3>
+                            <div class="mt-3 ml-3">
+                                <div class="ml-3">
+                                    <p>For this assignment, I decided to create a scene that mimicked a boss-fight from
+                                        Sonic the Hedgehog games.</p>
+                                    <p>I figured the nature of this object's motion lended itself well to hierarchal
+                                        modeling.</p>
+                                </div>
+                                <h4>Hierarchal Modeling (notes from lecture)</h4>
+                                <div class="ml-3">
+
+                                    <p> Very often we model scenes that include repeated
+                                        instances of very similar shapes, but:
+                                    <ul>
+                                        <li>
+                                            The different instances can include displaced, rotated, or
+                                            stretched versions of a “master copy”
+                                        </li>
+                                        <li>
+                                            The placement of some instances could be subordinate
+                                            to the placement of others
+                                        </li>
+                                        <li>
+                                            In many cases, different instances do not rely on each
+                                            other in just a linear/sequential fashion, but there is a
+                                            “tree” of dependencies of their respective transforms
+                                        </li>
+                                    </ul>
+                                    </p>
+                                    <p> Hierarchically dependent transforms are facilitated in
+                                        Canvas by the save()/restore() functionality
+                                    <ul>
+                                        <li>Instead of a single chain of transforms (actually single
+                                            combined transform representing a chain), Canvas
+                                            maintains a stack of composite transforms.</li>
+                                        <li>Issuing transforms, via Canvas commands, appends to the
+                                            transform chain at the top of the stack</li>
+                                        <li>The save() command duplicates the top of the stack, and
+                                            pushes the duplicate copy down the stack.</li>
+                                        <li>The restore() command pops the transform (transform
+                                            chain, or combined transform, in fact) from the stack top.</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="border w-100">
+                            <h3>Outline of app.js:</h3>
+                            <div class="mt-3 ml-3">
+                                <ul>
+                                    <li>
+                                        <p>drawBackground()
+                                        <ul>
+                                            <li>Draws the sky, ground, and trees.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>drawEggman()
+                                        <ul>
+                                            <li>
+                                                Draws a ball with a robot face.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>drawChainLink()
+                                        <ul>
+                                            <li>
+                                                Draws a single chain link.
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p> drawEggChain
+                                        <ul>
+                                            <li>Increments/decrements a global x,y value which is used
+                                                each frame as the starting translation for the root of the
+                                                parent object. This is what makes the object bounce around
+                                                the screen.</li>
+                                            <li>We save our context with (x,y) as our new origin.</li>
+                                            <li>Our root object is going to be an Eggman(ball) in the center.</li>
+                                            <li>Our two children will then be two chain links, one on top, one on
+                                                bottom.
+                                            </li>
+                                            <li>Each chain link will have several subsequent chain link children,
+                                                some of which will rotate themselves and their children each frame.</li>
+                                            <li>At the end of each chain sequence will be an Eggman(ball).</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            drawCircle()
+                                        <ul>
+                                            <li>Used in proof of concept only.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>drawLine()
+                                        <ul>
+                                            <li>Used in proof of concept only.</li>
+                                        </ul>
+                                        </p>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <hr class="border w-100">
                         </div>
                     </div>
 
