@@ -114,35 +114,135 @@
                             <h2>UW Course Catalog</h2>
                             <h6 class="text-muted">Author: Tyler Johnston, </h6>
                             <h6 class="text-muted">Tools: React, React-Bootstrap, Javascript</h6>
-                            <h6 class="text-muted font-size-xxs"><a href="#">Github
-                                    Repo (TODO: Currently private and moderated by UW faculty.)</a>
-                            </h6>
                             <h6 class="text-muted">Date Posted: 01/06/2021</h6>
                         </div>
                     </div>
-                    <!--Article Video-->
-                    <!-- TODO -->
-                    <!-- <div class="container-fluid mb-4">
-                    <h3>
-                        Demo:
-                    </h3>
-                    <video width="100%" height="auto" controls>
-                        <source src="/videos/Text101 2021-06-06 19-26-55.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="container-fluid rounded border mb-3 p-2">
-                    <p><span class="badge badge-dark">Game Description:</span></p>
-                    <p>This was my take on the Text 101 project in GameDev.tv's 2D Unity Course.</p>
-                    <p><span class="text-danger">Very</span> simple choose-your-own-path microgame that was used as my
-                        first-exposure to
-                        Unity's Scriptable Objects.</p>
-                    <p>Effectively, we made a state-machine. See diagram below:</p>
-                    <span class="text-center">
-                        <img id="stateimg" class="img-fluid"
-                            src="/photos/StateDesign.sdr - SmartDraw 2020 6_6_2021 7_31_43 PM (2).png" alt="">
-                    </span>
-                </div> -->
+                    <!-- Article Body -->
+                    <div class="row">
+                        <div class="col col-lg-8">
+                            <h4 class="display-4">Overview</h4>
+                            <p>As an introduction to React, University of Wisconsin's UX/UI design course had us
+                                develop
+                                a course search and
+                                enroll web application. Over a span of four weeks, the application went through
+                                four
+                                iterations. The links below lead to live demos.
+                            </p>
+                            <p>
+                                (Note: These web applications are not
+                                responsive.)
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        Course Search and Enroll - <a
+                                            href=https://tylerjj.github.io/course_catalog>https://tylerjj.github.io/course_catalog/</a>
+                                    </p>
+                                    <img src="/projects/fall2021/design/react/photos/course_catalog_original.PNG"
+                                        width="100%" height="100%" alt="...">
+                                </li>
+                                <li>
+                                    <p>
+                                        Redesign - <a
+                                            href="https://tylerjj.github.io/course_catalog_redesign/">https://tylerjj.github.io/course_catalog_redesign/</a>
+                                    </p>
+                                    <img src="/projects/fall2021/design/react/photos/redesign.png" width="100%"
+                                        height="100%" alt="...">
+                                </li>
+                                <li>
+                                    <p>
+                                        Completed & Recommended Courses - <a
+                                            href="https://tylerjj.github.io/course_catalog_v2">https://tylerjj.github.io/course_catalog_v2</a>
+                                    </p>
+                                    <img src="/projects/fall2021/design/react/photos/v2.png" width="100%" height="100%"
+                                        alt="...">
+                                </li>
+                                <li>
+                                    <p>
+                                        Heuristic Evaluation & Updates - <a
+                                            href="https://tylerjj.github.io/course_catalog_v2_heuristics">https://tylerjj.github.io/course_catalog_v2_heuristics</a>
+                                    </p>
+                                    <img src="/projects/fall2021/design/react/photos/v2_heuristics.png" width="100%"
+                                        height="100%" alt="...">
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="table-of-contents d-none d-lg-inline col-md-4">
+                            <div class="container-fluid rounded border bg-light text-dark px-2 py-2">
+                                <h4>Contents</h4>
+                                <ul>
+                                    <li>
+                                        <p>Overview</p>
+                                    </li>
+                                    <li>
+                                        <p>Week 01</p>
+                                        <ul>
+                                            <li>Course Search and Enroll</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Week 02</p>
+                                        <ul>
+                                            <li>Analysis of Week 01: Structure, Layout, and Navigation</li>
+                                            <li>Wireframes for Redesign</li>
+                                            <li>Detailed Redesign</li>
+                                            <li>Implementation of Redesign</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Week 03</p>
+                                        <ul>
+                                            <li>New Starter Code</li>
+                                            <li>Completed & Recommended Courses</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Week 04</p>
+                                        <ul>
+                                            <li>Heuristic Evalutation of Week 03</li>
+                                            <li>Implementation of Updated Heuristics</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                            <h4>Week 01</h4>
+                            </p>
+                            <p>
+                            <h5 class="text-muted">Course Search and Enroll</h5>
+                            </p>
+                            <video width="100%" height="auto" controls="">
+                                <source src="/projects/fall2021/design/react/videos/course_enroll.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>This assignment is meant to introduce more features of JavaScript, along with showing how
+                                a
+                                React project works. Additionally, this will introduce different features of React, e.g.
+                                states, props, more modularized components etc. </p>
+                            <p>This project is the first of a two part React project in which the course management
+                                application is extended. This application uses a limited quantity of modified data from
+                                the
+                                UW Madison course information database.</p>
+                            <h6>Features Implemented</h6>
+                            <ul>
+                                <li>Display all course content for each course fetched from API</li>
+                                <li>Search and filter functionality, allowing the user to search by keyword or filter by
+                                    credits or subject.</li>
+                                <li>Add or remove course from cart</li>
+                                <li>View courses in cart.</li>
+                            </ul>
+                            <p>For more information, see a <a
+                                    href="https://github.com/tylerjj/course_catalog#readme">full
+                                    writeup of assignment deliverables.</a></p>
+                        </div>
+                    </div>
+
+
+
                 </div>
                 <!-- Section Navigation for larger screens -->
                 <div class="d-none d-md-inline col-3">
