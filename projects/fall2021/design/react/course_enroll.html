@@ -13,6 +13,16 @@
 
     <link rel="stylesheet" href="app.css">
     <script src="https://kit.fontawesome.com/8c54e2b80b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // https://developer.mozilla.org/en-US/docs/Web/API/Window/location
+        function loadAnchor(accordion_section_ids, path) {
+            for (section_id of accordion_section_ids) {
+                $("#" + section_id).collapse('show');
+            }
+            let target = location.pathname;
+            location.replace(path)
+        }
+    </script>
 </head>
 
 <body>
@@ -216,39 +226,48 @@
                                         </p>
                                     </li>
                                     <li>
-                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_01">Week
-                                                01</a></p>
+                                        <p>
+                                            <a href="/projects/fall2021/design/react/course_enroll.html#week_01"
+                                                onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#week_01')">Week
+                                                01</a>
+                                        </p>
                                         <ul>
-                                            <li><a
-                                                    href="/projects/fall2021/design/react/course_enroll.html#course_search">Course
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#course_search"
+                                                    onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#course_search')">Course
                                                     Search and Enroll</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_02">Week
+                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_02"
+                                                onclick="loadAnchor(['collapseTwo'],'/projects/fall2021/design/react/course_enroll.html#week_02')">Week
                                                 02</a></p>
                                         <ul>
-                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#analysis">Analysis
-                                                    of Week 01: Structure, Layout, and Navigation</a></li>
-                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#wireframes">Wireframes
+                                            <li>
+                                                <a href="/projects/fall2021/design/react/course_enroll.html#analysis"
+                                                    onclick="loadAnchor(['collapseTwo', 'collapseOneWeek02'],'/projects/fall2021/design/react/course_enroll.html#analysis')">Analysis
+                                                    of Week 01: Structure, Layout, and Navigation</a>
+                                            </li>
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#wireframes"
+                                                    onclick="loadAnchor(['collapseTwo', 'collapseTwoWeek02'],'/projects/fall2021/design/react/course_enroll.html#analysis')">Wireframes
                                                     for Redesign</a></li>
-                                            <li><a
-                                                    href="/projects/fall2021/design/react/course_enroll.html#redesign_details">Detailed
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#redesign_details"
+                                                    onclick="loadAnchor(['collapseTwo', 'collapseThreeWeek02'],'/projects/fall2021/design/react/course_enroll.html#redesign_details')">Detailed
                                                     Redesign</a></li>
-                                            <li><a
-                                                    href="/projects/fall2021/design/react/course_enroll.html#redesign_implem">Implementation
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#redesign_implem"
+                                                    onclick="loadAnchor(['collapseTwo', 'collapseFourWeek02'],'/projects/fall2021/design/react/course_enroll.html#redesign_implem')">Implementation
                                                     of Redesign</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_03">Week
+                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_03"
+                                                onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#week_03')">Week
                                                 03</a></p>
                                         <ul>
-                                            <li><a
-                                                    href="/projects/fall2021/design/react/course_enroll.html#comp_rec_courses">Completed
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#comp_rec_courses"
+                                                    onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#comp_rec_courses')">Completed
                                                     & Recommended Courses Demo</a></li>
-                                            <li><a
-                                                    href="/projects/fall2021/design/react/course_enroll.html#w03_features">Features
+                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#w03_features"
+                                                    onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#w03_features')">Features
                                                     Implemented</a></li>
                                         </ul>
                                     </li>
@@ -278,7 +297,7 @@
                                 </h2>
                             </div>
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div id="week_01" class="week01_row row">
@@ -1125,6 +1144,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script>
+        if (window.location.search == '?collapseExample') {
+            $('#collapseExample').addClass('show');
+        }
+    </script>
 </body>
 
 </html>
