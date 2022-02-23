@@ -16,42 +16,36 @@
 
 <body>
     <!-- HEADING -->
-    <div class="jumbotron jumbotron-fluid p-0 pb-2 m-0">
-        <div class="container-fluid">
-            <!-- <div class="row">
-                <div class="col-12 p-0">
-                    <img src="photos/WIN_20210824_14_46_13_Pro (2).jpg"
-                        class="w-50 img-fluid rounded-circle shadow-lg d-inline d-sm-none ">
-                </div>
-            </div> -->
-            <div class="row text-center align-items-center">
-                <div class="col-12 col-sm-8">
-                    <h1 class="">Tyler Johnston's Portfolio</h1>
-                    <div class="row d-sm-none">
-                        <div class="col-12 p-0 d-sm-none">
-                            <img src="photos/241529914_575279363661556_2302328853551926712_n_edited(1).jpg"
-                                class="w-50 img-fluid rounded-circle shadow-lg d-inline d-sm-none ">
-                        </div>
-                    </div>
-                    <div class="headerinfo row mx-auto">
-                        <div class="col-12-p-0">
-                            <p class="lead">B.S. Computer Science</p>
-                            <p class="lead">University of Wisconsin - Madison, Dec. 2021</p>
-                            <p class="lead">tylerj.johnston@outlook.com</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col ">
+    <div class="personal-info-header jumbotron py-2 mb-0">
+        <div class="row text-center align-items-center">
+            <div class="col-12 col-sm-8">
+                <div class="row-small-screens row d-inline d-sm-none">
+                    <!-- Stuff for mobile -->
+                    <h1 class="display-1">Tyler Johnston's Portfolio</h1>
+                    <p>B.S. Computer Science</p>
+                    <p>University of Wisconsin - Madison, Dec. 2021</p>
+                    <p>tylerj.johnston@outlook.com</p>
                     <img src="photos/241529914_575279363661556_2302328853551926712_n_edited(1).jpg"
-                        class="img-fluid rounded-circle shadow-lg d-none d-sm-inline mw-100">
+                        class="img-fluid rounded-circle shadow-lg " width="30%">
+                </div>
+                <div class="row-bigger-screens row d-none d-sm-inline m-0">
+                    <!-- Stuff for Web-->
+                    <h1 class="display-1">Tyler Johnston's Portfolio</h1>
+                    <p>B.S. Computer Science</p>
+                    <p>University of Wisconsin - Madison, Dec. 2021</p>
+                    <p>tylerj.johnston@outlook.com</p>
                 </div>
             </div>
+            <div class="col-sm-4">
+                <img src="photos/241529914_575279363661556_2302328853551926712_n_edited(1).jpg"
+                    class="img-fluid rounded-circle shadow-lg d-none d-sm-inline " width="30%">
+            </div>
+
         </div>
     </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <nav class=" navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="https://tylerjj.github.io">Home</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
             <span class="navbar-toggler-icon"></span>
@@ -75,7 +69,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="learning/coursehistory.html">Course History</a>
-                        <a class="dropdown-item" href="learning/continuedlearning.html">Continued Learning Plan</a>
+                        <a class="dropdown-item" href="learning/continuedlearning.html">Continued Learning
+                            Plan</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -103,11 +98,6 @@
 
     <!-- PRIMARY BODY OF CONTENT -->
     <div class="home-page p-0 container-fluid">
-        <!-- <div class="major-notification container-fluid rounded border bg-dark text-light py-2">
-            <h3 class="display-4 py-1 text-center">February 2022: Site Updates</h3>
-            <p class="lead py-1 text-center">Currently in the midst of interview prep. Fall projects will be receiving
-                writeups and deployment in the near future.</p>
-        </div> -->
         <div id="fall2021" class="season-recap container-fluid">
             <h2 class="display-4 m-4">Fall 2021</h2>
             <!-- MAIN CONTENT ROW -->
@@ -125,8 +115,10 @@
                             <div class="col-md-8">
                                 <div class="card-body container-fluid pt-0">
                                     <h5 class="card-title"><a href="/projects/fall2021/design/react/course_enroll.html">
-                                            UW Course Catalog: Course Search and Enroll Web Application.</a> </h5>
-                                    <p class="card-text"> This React project went through four iterations: two focused
+                                            UW Course Catalog: Course Search and Enroll Web Application.</a>
+                                    </h5>
+                                    <p class="card-text"> This React project went through four iterations:
+                                        two focused
                                         on
                                         programming, the other two focused on design.
                                     </p>
@@ -137,7 +129,8 @@
                                     <span class="badge bage-pill badge-primary my-2">RESTFUL API</span>
                                     <span class="badge bage-pill badge-primary my-2">Figma</span>
 
-                                    <p class="card-text"><small class="text-muted">Date Posted: 02/23/2022</small>
+                                    <p class="card-text"><small class="text-muted">Date Posted:
+                                            02/23/2022</small>
                                     </p>
                                 </div>
                             </div>
@@ -154,12 +147,14 @@
                                 <div class="card-body container-fluid">
                                     <h5 class="card-title"><a href="/projects/fall2021/mobile/help_me_find.html">
                                             HelpMeFind: Campus Resource Compass</a> </h5>
-                                    <p class="card-text">Android Studio Application - Find useful resources around
+                                    <p class="card-text">Android Studio Application - Find useful resources
+                                        around
                                         campus!
                                     </p>
                                     <span class="badge bage-pill badge-primary">Android Studio</span>
                                     <span class="badge bage-pill badge-primary">Java</span>
-                                    <p class="card-text my-2"><small class="text-muted">Date Posted: 01/06/2022</small>
+                                    <p class="card-text my-2"><small class="text-muted">Date Posted:
+                                            01/06/2022</small>
                                     </p>
                                 </div>
                             </div>
@@ -328,13 +323,16 @@
                                                     href="/projects/summer2021/tetrobreaker.html">Featured
                                                     Project:</a> <span class="badge badge-dark">Tetro
                                                     Breaker</span> </h4>
-                                            <p class="card-text">Block Breaker was the third project within GameDev.TV's
+                                            <p class="card-text">Block Breaker was the third project within
+                                                GameDev.TV's
                                                 2D
                                                 Unity course. </p>
-                                            <p> In an effort to make the game more my-own, I added a Tetris-block theme,
+                                            <p> In an effort to make the game more my-own, I added a
+                                                Tetris-block theme,
                                                 along with several features not present in Block Breaker.
                                             </p>
-                                            <p> This was about a month-long labor of love from July to the start of
+                                            <p> This was about a month-long labor of love from July to the
+                                                start of
                                                 August.
                                             </p>
                                             <p class="card-text"><small class="text-muted">Date Posted:
@@ -364,7 +362,8 @@
                                     <li>
                                         <h5>Dec. 2021: Academic/Career Advancement</h5>
                                         <ul class="text-muted">
-                                            <li>Graduate with a B.S. in Computer Science from UW-Madison.</li>
+                                            <li>Graduate with a B.S. in Computer Science from UW-Madison.
+                                            </li>
                                             <li>
                                                 <p>Pursue internship/full-time dev. work in the Midwest.</p>
                                             </li>
@@ -376,7 +375,8 @@
                                         <ul class="text-muted">
                                             <li>Web Development: MERN Stack</li>
                                             <li>Game Development: Unity 2D and 3D</li>
-                                            <li>Algorithms and Data Structures Revisited (Problem-Solving Reinforcement)
+                                            <li>Algorithms and Data Structures Revisited (Problem-Solving
+                                                Reinforcement)
                                             </li>
                                             <li>3D Modeling and Art-Asset Creation</li>
                                         </ul>
@@ -398,11 +398,13 @@
                                                 GameDev.TV Git,
                                                 Github, & SourceTree
                                                 Course Commentary</a> </h5>
-                                        <p class="card-text">This version-control course was a lifesaver when I was
+                                        <p class="card-text">This version-control course was a lifesaver
+                                            when I was
                                             working
                                             on Tetro Breaker.
                                         </p>
-                                        <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                        <p class="card-text"><small class="text-muted">Date Posted:
+                                                09/07/2021</small>
                                         </p>
                                     </div>
                                 </div>
@@ -417,8 +419,10 @@
                                                 2D Course
                                                 Project: Entertaining the AI (Number Wizard)
                                             </a></h5>
-                                        <p class="card-text">A more official introduction to Unity's UI elements.</p>
-                                        <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                        <p class="card-text">A more official introduction to Unity's UI
+                                            elements.</p>
+                                        <p class="card-text"><small class="text-muted">Date Posted:
+                                                09/07/2021</small>
                                         </p>
                                     </div>
                                 </div>
@@ -430,10 +434,13 @@
                                         <h5 class="card-title"><a
                                                 href="/projects/summer2021/cavernquest.html">GameDev.TV 2D
                                                 Course Project: Cavern Quest (Text 101)</a></h5>
-                                        <p class="card-text">First project within the GameDev.TV's 2D course. Utilized
-                                            scriptable-objects to effectively make a choose-your-own-path state-machine.
+                                        <p class="card-text">First project within the GameDev.TV's 2D
+                                            course. Utilized
+                                            scriptable-objects to effectively make a choose-your-own-path
+                                            state-machine.
                                         </p>
-                                        <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                        <p class="card-text"><small class="text-muted">Date Posted:
+                                                09/07/2021</small>
                                         </p>
                                     </div>
                                 </div>
@@ -506,11 +513,13 @@
                                             GameDev.TV Git,
                                             Github, & SourceTree
                                             Course Commentary</a> </h5>
-                                    <p class="card-text">This version-control course was a lifesaver when I was working
+                                    <p class="card-text">This version-control course was a lifesaver when I
+                                        was working
                                         on
                                         Tetro Breaker.
                                     </p>
-                                    <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                    <p class="card-text"><small class="text-muted">Date Posted:
+                                            09/07/2021</small>
                                     </p>
                                 </div>
                             </div>
@@ -525,8 +534,10 @@
                                     <h5 class="card-title"><a
                                             href="/projects/summer2021/entertainingtheai.html">GameDev.TV
                                             2D Course Project: Entertaining the AI (Number Wizard)</a></h5>
-                                    <p class="card-text">A more official introduction to Unity's UI elements.</p>
-                                    <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                    <p class="card-text">A more official introduction to Unity's UI
+                                        elements.</p>
+                                    <p class="card-text"><small class="text-muted">Date Posted:
+                                            09/07/2021</small>
                                     </p>
                                 </div>
                             </div>
@@ -542,9 +553,12 @@
                                     <h5 class="card-title"><a href="/projects/summer2021/cavernquest.html">
                                             GameDev.TV 2D
                                             Course Project: Cavern Quest (Text 101)</a></h5>
-                                    <p class="card-text">First project within the GameDev.TV's 2D course. Utilized
-                                        scriptable-objects to effectively make a choose-your-own-path state-machine.</p>
-                                    <p class="card-text"><small class="text-muted">Date Posted: 09/07/2021</small>
+                                    <p class="card-text">First project within the GameDev.TV's 2D course.
+                                        Utilized
+                                        scriptable-objects to effectively make a choose-your-own-path
+                                        state-machine.</p>
+                                    <p class="card-text"><small class="text-muted">Date Posted:
+                                            09/07/2021</small>
                                     </p>
                                 </div>
                             </div>
@@ -556,7 +570,8 @@
                             <h5>Hobbyist/Novice 3D Box Modeling</h5>
                             <div id="carouselBoxModeling" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carouselBoxModeling" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselBoxModeling" data-slide-to="0" class="active">
+                                    </li>
                                     <li data-target="#carouselBoxModeling" data-slide-to="1"></li>
                                     <li data-target="#carouselBoxModeling" data-slide-to="2"></li>
                                     <li data-target="#carouselBoxModeling" data-slide-to="3"></li>
@@ -608,7 +623,8 @@
                 <div class="container-fluid pb-3"><a href="#">Jump to Top</a></div>
             </div>
             <div class="col-4 text-right">
-                <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a></p>
+                <p><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a>
+                </p>
             </div>
         </div>
         <div class="row no-gutters align-items-center">
