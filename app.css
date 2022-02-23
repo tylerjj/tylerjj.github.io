@@ -22,7 +22,7 @@ div {
 }
 
 .jumbotron, .jumbotron h1, .jumbotron img, .jumbotron p {
-    max-height:350px;
+    max-height:250px;
 }
 
 .jumbotron h1 {
