@@ -91,11 +91,12 @@
     <div class="container-fluid">
         <!-- Section Navigation For Medium or Smaller Screens -->
         <div class="row d-inline d-md-none">
-            <div class="container-fluid border rounded border-dark bg-dark text-light py-2">
+            <div class="container-fluid border text-center rounded border-dark bg-dark text-light py-2">
                 <h5>UX/UI Design Project Directories</h5>
                 <hr class="border w-100">
-                <ul class="mx-10 nav flex-row border rounded border-dark bg-light text-dark">
-
+                <ul
+                    class="mx-10 nav flex-column align-content-center align-items-center border rounded border-dark bg-light text-dark">
+                    <hr class="border w-100">
                     <li class="nav-item mb-2">
                         <a class="nav-link" href="/projects/fall2021/design/bootstrap/wisc_shop.html">Web Design
                             (Bootstrap): Wisc Shop</a>
@@ -111,6 +112,7 @@
                             (React
                             Native): Badger Fitness</a>
                     </li>
+                    <hr class="border w-100">
                 </ul>
             </div>
         </div>
@@ -119,13 +121,15 @@
                 <!--Article Content-->
                 <div class="col col-lg-8">
                     <!-- Article Header-->
-                    <div class="container-fluid">
-                        <div class="jumbotron">
-                            <h2>UW Course Catalog</h2>
-                            <h6 class="text-muted">Author: Tyler Johnston</h6>
-                            <h6 class="text-muted">Tools: JavaScript, HTML, React, React-Bootstrap, Figma</h6>
-                            <h6 class="text-muted">Date Posted: 01/06/2021</h6>
-                        </div>
+                    <div class="container-fluid rounded p-4 mb-4 shadow-sm bg-dark">
+                        <h2 class="text-light">University of Wisconsin Course Search and Enrollment</h2>
+                        <h6 class="text-light">Author: Tyler Johnston</h6>
+                        <h6 class="text-light">Tools: <span class="badge bage-pill badge-primary">JavaScript</span>
+                            <span class="badge bage-pill badge-primary">HTML/CSS</span>
+                            <span class="badge bage-pill badge-primary">React/React-Bootstrap</span>
+                            <span class="badge bage-pill badge-primary">Figma</span>
+                        </h6>
+                        <h6 class="text-light">Date Posted: 01/06/2021</h6>
                     </div>
                     <!-- Article Body -->
                     <div class="row">
@@ -136,8 +140,12 @@
                                 a course search and
                                 enroll web application. Over a span of four weeks, the application went through
                                 four
-                                iterations. The links below lead to live demos.
+                                iterations.
                             </p>
+                            <p>
+                                See collapsed sections for demo videos, github repos, and project details.
+                            </p>
+                            <h5>Live Demos:</h5>
                             <p>
                                 (Note: These web applications were not built to accomodate mobile screens.)
                             </p>
@@ -228,19 +236,21 @@
                                     <li>
                                         <p>
                                             <a href="/projects/fall2021/design/react/course_enroll.html#week_01"
-                                                onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#week_01')">Week
-                                                01</a>
+                                                onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#week_01')">Course
+                                                Search and Enroll</a>
                                         </p>
                                         <ul>
                                             <li><a href="/projects/fall2021/design/react/course_enroll.html#course_search"
-                                                    onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#course_search')">Course
-                                                    Search and Enroll</a></li>
+                                                    onclick="loadAnchor(['collapseOne'],'/projects/fall2021/design/react/course_enroll.html#course_search')">Week
+                                                    01 Overview</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <p><a href="/projects/fall2021/design/react/course_enroll.html#week_02"
-                                                onclick="loadAnchor(['collapseTwo'],'/projects/fall2021/design/react/course_enroll.html#week_02')">Week
-                                                02</a></p>
+                                                onclick="loadAnchor(['collapseTwo'],'/projects/fall2021/design/react/course_enroll.html#week_02')">Analysis
+                                                and Redesign
+                                            </a></p>
                                         <ul>
                                             <li>
                                                 <a href="/projects/fall2021/design/react/course_enroll.html#analysis"
@@ -260,27 +270,28 @@
                                     </li>
                                     <li>
                                         <p><a href="/projects/fall2021/design/react/course_enroll.html#week_03"
-                                                onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#week_03')">Week
-                                                03</a></p>
+                                                onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#week_03')">Completed
+                                                and Recommended Course Functionality</a></p>
                                         <ul>
                                             <li><a href="/projects/fall2021/design/react/course_enroll.html#comp_rec_courses"
-                                                    onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#comp_rec_courses')">Completed
-                                                    & Recommended Courses Demo</a></li>
+                                                    onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#comp_rec_courses')">Week
+                                                    03 Overview</a>
+                                            </li>
                                             <li><a href="/projects/fall2021/design/react/course_enroll.html#w03_features"
                                                     onclick="loadAnchor(['collapseThree'],'/projects/fall2021/design/react/course_enroll.html#w03_features')">Features
                                                     Implemented</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="/projects/fall2021/design/react/course_enroll.html#week_04"
-                                            onclick="loadAnchor(['collapseFour'],'/projects/fall2021/design/react/course_enroll.html#week_04')">Week
-                                            04</a></li>
+                                            onclick="loadAnchor(['collapseFour'],'/projects/fall2021/design/react/course_enroll.html#week_04')">Heuristic
+                                            Evaluation</a></li>
                                     <ul>
                                         <li><a href="/projects/fall2021/design/react/course_enroll.html#find_focus"
                                                 onclick="loadAnchor(['collapseFour', 'collapseOneWeek04'],'/projects/fall2021/design/react/course_enroll.html#find_focus')">Finding
-                                                a Focus for Evaluation</a></li>
+                                                a Focus for Heuristic Evaluation</a></li>
                                         <li><a href="/projects/fall2021/design/react/course_enroll.html#pot_violations"
                                                 onclick="loadAnchor(['collapseFour', 'collapseThreeWeek04'],'/projects/fall2021/design/react/course_enroll.html#pot_violations')">Identifying
-                                                Potential Violations</a></li>
+                                                Potential Heuristics Violations</a></li>
                                         <li><a href="/projects/fall2021/design/react/course_enroll.html#recommended_fixes"
                                                 onclick="loadAnchor(['collapseFour', 'collapseFourWeek04'],'/projects/fall2021/design/react/course_enroll.html#recommended_fixes')">Recommended
                                                 Fixes</a></li>
@@ -293,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion my-5" id="accordionExample">
+                    <div class="accordion shadow-lg my-5" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
@@ -305,51 +316,65 @@
                                 </h2>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div id="week_01" class="week01_row row">
                                         <div class="col">
-                                            <p>
-                                            <h4 class="display-4 d-md-inline d-none">Week 01: Course Search
-                                                and Enroll
-                                            </h4>
-                                            <h4 class="d-xs-inline d-md-none">Week 01: Course Search and
-                                                Enroll
-                                            </h4>
-                                            </p>
-                                            <video width="100%" height="auto" controls="">
-                                                <source src="/projects/fall2021/design/react/videos/course_enroll.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <p>
-                                            <h5 id="course_search">Course Search and Enroll Overview</h5>
-                                            </p>
-                                            <p>This assignment is meant to introduce more features of JavaScript, along
-                                                with showing how
-                                                a
-                                                React project works. Additionally, this will introduce different
-                                                features of React, e.g.
-                                                states, props, more modularized components etc. </p>
-                                            <p>This project is the first of a two part React project in which the course
-                                                management
-                                                application is extended. This application uses a limited quantity of
-                                                modified data from
-                                                the
-                                                UW Madison course information database.</p>
-                                            <h6>Features Implemented</h6>
-                                            <ul>
-                                                <li>Display all course content for each course fetched from API</li>
-                                                <li>Search and filter functionality, allowing the user to search by
-                                                    keyword or filter by
-                                                    credits or subject.</li>
-                                                <li>Add or remove course from cart</li>
-                                                <li>View courses in cart.</li>
-                                            </ul>
-                                            <p>For more information, see a <a
-                                                    href="https://github.com/tylerjj/course_catalog#readme">full
-                                                    writeup of assignment deliverables.</a></p>
+                                            <div class="section-header container">
+                                                <p>
+                                                <h4 class="display-4 d-md-inline d-none">Week 01: Course Search
+                                                    and Enroll
+                                                </h4>
+                                                <h4 class="d-xs-inline d-md-none">Week 01: Course Search and
+                                                    Enroll
+                                                </h4>
+                                                </p>
+                                                <video class="mt-2" width="100%" height="auto" controls="">
+                                                    <source
+                                                        src="/projects/fall2021/design/react/videos/course_enroll.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <p>
+                                                    <a href="https://tylerjj.github.io/course_catalog" class="mt-2">Live
+                                                        Demo</a> / <a href="https://github.com/tylerjj/course_catalog"
+                                                        class="mt-2">GitHub Repo</a>
+                                                </p>
+                                            </div>
+                                            <div class="section-summary container">
+                                                <p>
+                                                <h5 id="course_search">Course Search and Enroll Overview</h5>
+                                                </p>
+                                                <p>This assignment is meant to introduce more features of JavaScript,
+                                                    along
+                                                    with showing how
+                                                    a
+                                                    React project works. Additionally, this will introduce different
+                                                    features of React, e.g.
+                                                    states, props, more modularized components etc. </p>
+                                                <p>This project is the first of a two part React project in which the
+                                                    course
+                                                    management
+                                                    application is extended. This application uses a limited quantity of
+                                                    modified data from
+                                                    the
+                                                    UW Madison course information database.</p>
+                                            </div>
+                                            <div class="section-content container">
+                                                <h6>Features Implemented</h6>
+                                                <ul>
+                                                    <li>Display all course content for each course fetched from API</li>
+                                                    <li>Search and filter functionality, allowing the user to search by
+                                                        keyword or filter by
+                                                        credits or subject.</li>
+                                                    <li>Add or remove course from cart</li>
+                                                    <li>View courses in cart.</li>
+                                                </ul>
+                                                <p>For more information, see a <a
+                                                        href="https://github.com/tylerjj/course_catalog#readme">full
+                                                        writeup of assignment deliverables.</a></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -370,21 +395,77 @@
                                 <div class="card-body">
                                     <div id="week_02" class="week02_row row">
                                         <div class="col">
-                                            <p>
-                                            <h4 class="display-4 d-md-inline d-none">Week 02: Analysis,
-                                                Wireframes, and
-                                                Redesign</h4>
-                                            <h4 class="d-xs-inline d-md-none">Week 02: Analysis,
-                                                Wireframes, and Redesign
-                                            </h4>
-                                            </p>
-                                            <video width="100%" height="auto" controls="">
-                                                <source
-                                                    src="/projects/fall2021/design/react/videos/course_enroll_redesign.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <div class="accordion" id="accordionWeek02">
+                                            <div class="section-heading container">
+                                                <p>
+                                                <h4 class="display-4 d-md-inline d-none">Week 02: Analysis,
+                                                    Wireframes, and
+                                                    Redesign</h4>
+                                                <h4 class="d-xs-inline d-md-none">Week 02: Analysis,
+                                                    Wireframes, and Redesign
+                                                </h4>
+                                                </p>
+                                                <video class="mt-2" width="100%" height="auto" controls="">
+                                                    <source
+                                                        src="/projects/fall2021/design/react/videos/course_enroll_redesign.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <p>
+                                                    <a class="mt-2"
+                                                        href="https://tylerjj.github.io/course_catalog_redesign/">Live
+                                                        Demo</a>
+                                                    /
+                                                    <a class="mt-2"
+                                                        href="https://github.com/tylerjj/course_catalog_redesign">GitHub
+                                                        Repo</a>
+                                                </p>
+
+                                            </div>
+                                            <div class="section-summary mt-2 container">
+                                                <h5>Section Summary</h5>
+                                                <ul class="mt-2">
+                                                    <li>
+                                                        <p>In this section, the goal was to analyze our pre-existing
+                                                            course
+                                                            search
+                                                            and enrollment application, with the goal of finding room
+                                                            for
+                                                            improvement in its design.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>After the analysis, the goal was to construct wireframes for
+                                                            a
+                                                            redesign.
+                                                            This was to be done using a design software (such as FIGMA.)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Once the wireframes were completed, it was time to refine the
+                                                            details of
+                                                            the redesign (i.e. selecting a color palette, icons, and
+                                                            fonts)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The final step was meant to be the creation of a mockup for
+                                                            our
+                                                            redesign.
+                                                            Instead, I chose to
+                                                            try implementing the redesign, including a revamp of my
+                                                            React
+                                                            component
+                                                            hierarchy.</p>
+                                                        <p><i class="text-danger">Note: </i>Due to the limited time
+                                                            available (as an
+                                                            implementation was going beyond assignment scope), a bug
+                                                            persisted in
+                                                            that
+                                                            sections/subsections for a course can't be viewed within the
+                                                            Cart.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion mt-2 shadow" id="accordionWeek02">
                                                 <div class="card">
                                                     <div class="card-header" id="headingOneWeek02">
                                                         <h2 class="mb-0">
@@ -704,7 +785,7 @@
                                                             </button>
                                                         </h2>
                                                     </div>
-                                                    <div id="collapseThreeWeek02" class="collapse show"
+                                                    <div id="collapseThreeWeek02" class="collapse"
                                                         aria-labelledby="headingThreeWeek02"
                                                         data-parent="#accordionWeek02">
                                                         <div class="card-body">
@@ -923,168 +1004,209 @@
                                 <div class="card-body">
                                     <div id="week_03" class="week03_row row">
                                         <div class="col">
-                                            <p>
-                                            <h4 class="display-4 d-md-inline d-none">Week 03: Completed and
-                                                Recommended
-                                                Courses</h4>
-                                            <h4 class="d-xs-inline d-md-none">Week 03: Completed and
-                                                Recommended Courses
-                                            </h4>
-                                            </p>
-                                            <video id="comp_rec_courses" width="100%" height="auto" controls="">
-                                                <source src="/projects/fall2021/design/react/videos/week03_demo.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <p>
-                                            <h4 class="">Completed and
-                                                Recommended Courses
-                                            </h4>
+                                            <div class="mb-2 section-header container">
+                                                <p>
+                                                <h4 class="display-4 d-md-inline d-none">Week 03: Completed and
+                                                    Recommended
+                                                    Courses</h4>
+                                                <h4 class="d-xs-inline d-md-none">Week 03: Completed and
+                                                    Recommended Courses
+                                                </h4>
+                                                </p>
+                                                <video class="mt-2" id="comp_rec_courses" width="100%" height="auto"
+                                                    controls="">
+                                                    <source src="/projects/fall2021/design/react/videos/week03_demo.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <p>
+                                                    <a href="https://tylerjj.github.io/course_catalog_v2/"
+                                                        class="mt-2">Live Demo</a> / <a
+                                                        href="https://github.com/tylerjj/course_catalog_v2"
+                                                        class="mt-2">GitHub
+                                                        Repo</a>
+                                                </p>
+                                            </div>
+                                            <div class="section-content container">
+                                                <p>
+                                                <h4 class="">Completed and
+                                                    Recommended Courses
+                                                </h4>
 
-                                            <h6>(Starter Code from TA Implementation of Week 01)</h6>
-                                            </p>
-                                            <h5 id="w03_features">Overview</h5>
-                                            <p>This assignment is meant to introduce features of React. This is the
-                                                second functionality
-                                                assignment in which the features of a course guide application are
-                                                extended. This
-                                                application uses a limited quantity of modified data from
-                                                the UW-Madison course information database. With this assignment, the
-                                                features of Course Enroll - Week 01 will be extended to create a course
-                                                recommendation
-                                                system.</p>
-                                            <p>This project is the first of a two part React project in which the course
-                                                management
-                                                application is extended. This application uses a limited quantity of
-                                                modified data from
-                                                the
-                                                UW Madison course information database.</p>
-                                            <h5>Features Implemented</h5>
-                                            <ul>
-                                                <li><strong>Problem 1:</strong>
-                                                    <ol type="i">
-                                                        <li>Fetch data from server
-                                                            <i>http://cs571.cs.wisc.edu:53706/api/react/students/5022025924/classes/completed</i>.
-                                                            This data details which courses have already been completed.
-                                                        </li>
-                                                        <li>
-                                                            Create a new component to display a previously taken course.
-                                                            This component
-                                                            might look somewhat like the Course component, but it will
-                                                            be simpler and
-                                                            won’t have options to add the course to the cart. In
-                                                            addition, it should not
-                                                            display information regarding sections/subsections since
-                                                            they vary between
-                                                            semesters. (You may also reuse the Course component if you
-                                                            can satisfy the
-                                                            aforementioned requirements with conditional rendering. )
-                                                        </li>
-                                                        <li>
-                                                            Create a new component to hold the previously taken course
-                                                            components. Make
-                                                            this component accessible as a new tab in the app. (Refer to
-                                                            Problem 2 and
-                                                            Problem 4 for example visualizations)
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li><strong>Problem 2:</strong>
-                                                    <ol type="i">
-                                                        <li>Create a component for rating a specific course. For
-                                                            example, the sample
-                                                            implementation below created the rating component as a child
-                                                            of the
-                                                            completed
-                                                            course component.</li>
-                                                        <li>Allow the user to rate courses they have already completed.
-                                                        </li>
-                                                        <img width="100%" height="auto"
-                                                            src="/projects/fall2021/design/react/gifs/react02_prob02.gif"
-                                                            alt=" Problem 02 Visualization " />
-                                                    </ol>
-                                                </li>
-                                                <li><strong>Problem 3:</strong>
-                                                    <ol type="i">
-                                                        <li>Generate a list of interest areas based on the course data.
-                                                            Note that the
-                                                            interest areas should not be hard-coded but should be based
-                                                            on some values
-                                                            of the course data. For example, the sample implementation
-                                                            below dynamically
-                                                            generates interest areas using keywords from the courses.
-                                                        </li>
-                                                        <li>Create a component for the user to filter course results by
-                                                            interest area,
-                                                            using your list of interest areas. Make this component
-                                                            available to the
-                                                            user. The sample implementation put this component in the
-                                                            Sidebar Component.
-                                                        </li>
-                                                        <img width="100%" height="auto"
-                                                            src="/projects/fall2021/design/react/gifs/react02_prob03.gif"
-                                                            alt=" Problem 03 Visualization " />
-                                                    </ol>
-                                                </li>
-                                                <li><strong>Problem 4:</strong>
-                                                    <ol type="i">
-                                                        <li>Create your own recommender algorithm that takes in the
-                                                            rated courses and
-                                                            interest areas. Use the interest areas of rated courses to
-                                                            recommend courses
-                                                            which have not yet been taken in the interest areas of
-                                                            highly rated
-                                                            completed courses.</li>
-                                                        <li>Create a new tab which displays the recommended courses to
-                                                            the user. For
-                                                            instance, the sample implementation below shows several
-                                                            recommended courses
-                                                            in the interest areas of rated courses, sorted by the rating
-                                                            scores user
-                                                            gave for each interest area.</p>
-                                                        </li>
-                                                        <li>
-                                                            Note: As long as your algorithm considers user's
-                                                            recommendation score and
-                                                            interest areas you defined in Problem 3, and does not
-                                                            include previously
-                                                            taken courses, the rest of the specifics is up to you.
-                                                        </li>
-                                                        <img width="100%" height="auto"
-                                                            src="/projects/fall2021/design/react/gifs/react02_prob04.gif"
-                                                            alt=" Problem 04 Visualization " />
-                                                    </ol>
-                                                </li>
-                                                <li><strong>Problem 5:</strong>
-                                                    <ol type="i">
-                                                        <li>When adding a course to the cart, design a way to let the
-                                                            user know if they
-                                                            are not able to take the course based off of the requisites
-                                                            and the user's
-                                                            previously taken courses. Even if a student does not meet
-                                                            the requisites to
-                                                            enroll in a course, they should still be able to add it to
-                                                            the cart.</li>
-                                                        <li>
-                                                            Anytime a course, section, or subsection is added, the user
-                                                            should be
-                                                            notified in some way if they don't meet a requisite. As long
-                                                            as you adhere
-                                                            to this basic requirement, the way to achieve this is
-                                                            completely up to you.
-                                                            (You may use one of the components from Bootstrap, or even a
-                                                            simple
-                                                            JavaScript function.)
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                            </ul>
-                                            <p>This project was bootstrapped (by TAs) with <a
-                                                    href="https://github.com/facebook/create-react-app">Create React
-                                                    App</a></p>
-                                            <p>For more information, see a <a
-                                                    href="https://github.com/tylerjj/course_catalog_v2#readme">full
-                                                    writeup of assignment deliverables.</a></p>
+                                                <h6>(Starter Code from TA Implementation of Week 01)</h6>
+                                                </p>
+                                                <h5 id="w03_features">Overview</h5>
+                                                <p>This assignment is meant to introduce features of React. This is the
+                                                    second functionality
+                                                    assignment in which the features of a course guide application are
+                                                    extended. This
+                                                    application uses a limited quantity of modified data from
+                                                    the UW-Madison course information database. With this assignment,
+                                                    the
+                                                    features of Course Enroll - Week 01 will be extended to create a
+                                                    course
+                                                    recommendation
+                                                    system.</p>
+                                                <p>This project is the first of a two part React project in which the
+                                                    course
+                                                    management
+                                                    application is extended. This application uses a limited quantity of
+                                                    modified data from
+                                                    the
+                                                    UW Madison course information database.</p>
+                                                <h5>Features Implemented</h5>
+                                                <ul class="mt-2">
+                                                    <li class="mt-2"><strong>Problem 1:</strong>
+                                                        <ol class="mt-2" type="i">
+                                                            <li>Fetch data from server
+                                                                <i>http://cs571.cs.wisc.edu:53706/api/react/students/5022025924/classes/completed</i>.
+                                                                This data details which courses have already been
+                                                                completed.
+                                                            </li>
+                                                            <li>
+                                                                Create a new component to display a previously taken
+                                                                course.
+                                                                This component
+                                                                might look somewhat like the Course component, but it
+                                                                will
+                                                                be simpler and
+                                                                won’t have options to add the course to the cart. In
+                                                                addition, it should not
+                                                                display information regarding sections/subsections since
+                                                                they vary between
+                                                                semesters. (You may also reuse the Course component if
+                                                                you
+                                                                can satisfy the
+                                                                aforementioned requirements with conditional rendering.
+                                                                )
+                                                            </li>
+                                                            <li>
+                                                                Create a new component to hold the previously taken
+                                                                course
+                                                                components. Make
+                                                                this component accessible as a new tab in the app.
+                                                                (Refer to
+                                                                Problem 2 and
+                                                                Problem 4 for example visualizations)
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li class="mt-2"><strong>Problem 2:</strong>
+                                                        <ol class="mt-2" type="i">
+                                                            <li>Create a component for rating a specific course. For
+                                                                example, the sample
+                                                                implementation below created the rating component as a
+                                                                child
+                                                                of the
+                                                                completed
+                                                                course component.</li>
+                                                            <li>Allow the user to rate courses they have already
+                                                                completed.
+                                                            </li>
+                                                            <img width="50%" height="auto"
+                                                                src="/projects/fall2021/design/react/gifs/react02_prob02.gif"
+                                                                alt=" Problem 02 Visualization " />
+                                                        </ol>
+                                                    </li>
+                                                    <li class="mt-2"><strong>Problem 3:</strong>
+                                                        <ol class="mt-2" type="i">
+                                                            <li>Generate a list of interest areas based on the course
+                                                                data.
+                                                                Note that the
+                                                                interest areas should not be hard-coded but should be
+                                                                based
+                                                                on some values
+                                                                of the course data. For example, the sample
+                                                                implementation
+                                                                below dynamically
+                                                                generates interest areas using keywords from the
+                                                                courses.
+                                                            </li>
+                                                            <li>Create a component for the user to filter course results
+                                                                by
+                                                                interest area,
+                                                                using your list of interest areas. Make this component
+                                                                available to the
+                                                                user. The sample implementation put this component in
+                                                                the
+                                                                Sidebar Component.
+                                                            </li>
+                                                            <img width="50%" height="auto"
+                                                                src="/projects/fall2021/design/react/gifs/react02_prob03.gif"
+                                                                alt=" Problem 03 Visualization " />
+                                                        </ol>
+                                                    </li>
+                                                    <li class="mt-2"><strong>Problem 4:</strong>
+                                                        <ol class="mt-2" type="i">
+                                                            <li>Create your own recommender algorithm that takes in the
+                                                                rated courses and
+                                                                interest areas. Use the interest areas of rated courses
+                                                                to
+                                                                recommend courses
+                                                                which have not yet been taken in the interest areas of
+                                                                highly rated
+                                                                completed courses.</li>
+                                                            <li>Create a new tab which displays the recommended courses
+                                                                to
+                                                                the user. For
+                                                                instance, the sample implementation below shows several
+                                                                recommended courses
+                                                                in the interest areas of rated courses, sorted by the
+                                                                rating
+                                                                scores user
+                                                                gave for each interest area.</p>
+                                                            </li>
+                                                            <li>
+                                                                Note: As long as your algorithm considers user's
+                                                                recommendation score and
+                                                                interest areas you defined in Problem 3, and does not
+                                                                include previously
+                                                                taken courses, the rest of the specifics is up to you.
+                                                            </li>
+                                                            <img width="50%" height="auto"
+                                                                src="/projects/fall2021/design/react/gifs/react02_prob04.gif"
+                                                                alt=" Problem 04 Visualization " />
+                                                        </ol>
+                                                    </li>
+                                                    <li class="mt-2"><strong>Problem 5:</strong>
+                                                        <ol class="mt-2" type="i">
+                                                            <li>When adding a course to the cart, design a way to let
+                                                                the
+                                                                user know if they
+                                                                are not able to take the course based off of the
+                                                                requisites
+                                                                and the user's
+                                                                previously taken courses. Even if a student does not
+                                                                meet
+                                                                the requisites to
+                                                                enroll in a course, they should still be able to add it
+                                                                to
+                                                                the cart.</li>
+                                                            <li>
+                                                                Anytime a course, section, or subsection is added, the
+                                                                user
+                                                                should be
+                                                                notified in some way if they don't meet a requisite. As
+                                                                long
+                                                                as you adhere
+                                                                to this basic requirement, the way to achieve this is
+                                                                completely up to you.
+                                                                (You may use one of the components from Bootstrap, or
+                                                                even a
+                                                                simple
+                                                                JavaScript function.)
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                                <p>This project was bootstrapped (by TAs) with <a
+                                                        href="https://github.com/facebook/create-react-app">Create React
+                                                        App</a></p>
+                                                <p>For more information, see a <a
+                                                        href="https://github.com/tylerjj/course_catalog_v2#readme">full
+                                                        writeup of assignment deliverables.</a></p>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1100,35 +1222,52 @@
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div id="week_04" class="week04_row row">
                                         <div class="col">
-                                            <p>
-                                            <h4 class="display-4 d-md-inline d-none">Week 04: Heuristic Evaluation,
-                                                Recommendations, and Fixes</h4>
-                                            <h4 class="d-xs-inline d-md-none">Week 04: Heuristic Evaluation,
-                                                Recommendations, and Fixes
-                                            </h4>
-                                            </p>
-                                            <video width="100%" height="auto" controls="">
-                                                <source src="/projects/fall2021/design/react/videos/week04_demo.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <h4 class="">
-                                                Heuristics Cheatsheet
-                                            </h4>
-                                            <img src="/projects/fall2021/design/react/photos/heuristics/heuristics_cheatsheet.png"
-                                                width="100%" height="auto" alt="...">
-                                            <p><strong>Image Source:
-                                                </strong><a
-                                                    href="https://uxdesign.cc/10-usability-heuristics-every-designer-should-know-129b9779ac53">UX
-                                                    Collective</a></p>
-                                            <p>These heuristics are what we will be
-                                                evaluating our components against.</p>
-                                            <div class="accordion" id="accordionWeek04">
+                                            <div class="section-heading container">
+                                                <p>
+                                                <h4 class="display-4 d-md-inline d-none">Week 04: Heuristic Evaluation,
+                                                    Recommendations, and Fixes</h4>
+                                                <h4 class="d-xs-inline d-md-none">Week 04: Heuristic Evaluation,
+                                                    Recommendations, and Fixes
+                                                </h4>
+                                                </p>
+                                                <video class="mt-2" width="100%" height="auto" controls="">
+                                                    <source src="/projects/fall2021/design/react/videos/week04_demo.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <p>
+                                                    <a href="https://tylerjj.github.io/course_catalog_v2_heuristics/"
+                                                        class="mt-2">Live Demo</a> / <a
+                                                        href="https://github.com/tylerjj/course_catalog_v2_heuristics"
+                                                        class="mt-2">GitHub
+                                                        Repo</a>
+                                                </p>
+                                                <p><i class="text-danger">Note: </i><small>When going to the live demo,
+                                                        click the top left tab to get started. The app launching without
+                                                        a tab in view was an oversight at the time of writing the
+                                                        program.</small></p>
+                                            </div>
+                                            <div class="section-summary container">
+                                                <h4 class="">
+                                                    Heuristics Cheatsheet
+                                                </h4>
+                                                <img class="mt-2"
+                                                    src="/projects/fall2021/design/react/photos/heuristics/heuristics_cheatsheet.png"
+                                                    width="100%" height="auto" alt="...">
+                                                <p><strong>Image Source:
+                                                    </strong><a
+                                                        href="https://uxdesign.cc/10-usability-heuristics-every-designer-should-know-129b9779ac53">UX
+                                                        Collective</a></p>
+                                                <p>These heuristics are what we will be
+                                                    evaluating our components against.</p>
+                                            </div>
+
+                                            <div class="accordion shadow" id="accordionWeek04">
                                                 <div class="card">
                                                     <div class="card-header" id="headingOneWeek04">
                                                         <h2 class="mb-0">
@@ -1146,7 +1285,7 @@
                                                         <div class="card-body">
                                                             <div id="find_focus" class="container-fluid">
                                                                 <div class="container mb-2">
-                                                                    <div class="section-description container-fluid">
+                                                                    <div class="section-header container">
                                                                         <h4 class="">
                                                                             Finding a Focus for Evaluation
                                                                         </h4>
@@ -1167,58 +1306,80 @@
                                                                             will make the most difference in terms of
                                                                             effectiveness and user experience.</p>
                                                                     </div>
-                                                                    <ol>
-                                                                        <li>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/course_comp_stacked.PNG"
-                                                                                width="100%" height="auto" alt="...">
-                                                                            <p><strong>Relevant Views: </strong>Search
-                                                                                Tab,
-                                                                                Cart Tab</p>
-                                                                            <p><strong>React Component:
-                                                                                </strong><i>Course</i>
-                                                                            </p>
-                                                                            <p><strong>Justification: </strong>These two
-                                                                                views showcase the primary functionality
-                                                                                of the course enrollment application.
-                                                                                That primary functionality is built upon
-                                                                                <i>Course</i> components.
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/completed_course_comp_01.jpg"
-                                                                                width="100%" height="auto" alt="...">
-                                                                            <p><strong>Relevant Views:
-                                                                                </strong>Completed Courses Tab</p>
-                                                                            <p><strong>React Component:
-                                                                                </strong><i>CompletedCourse</i>
-                                                                            </p>
-                                                                            <p><strong>Justification: </strong> Given
-                                                                                that the Completed Courses Tab view is
-                                                                                one of four views in our app, and that
-                                                                                it's necessary in generating recommended
-                                                                                courses, its building blocks
-                                                                                (<i>CompletedCourse</i> components) are
-                                                                                worth analyzing.
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/recommended_course_comp_01.jpg"
-                                                                                width="100%" height="auto" alt="...">
-                                                                            <p><strong>Relevant Views:
-                                                                                </strong>Recommended Courses Tab</p>
-                                                                            <p><strong>React Component:
-                                                                                </strong><i>RecommendedCourse</i>
-                                                                            </p>
-                                                                            <p><strong>Justification: </strong> Given
-                                                                                that the Recommended Courses Tab view is
-                                                                                one of four views in our app, its
-                                                                                building blocks
-                                                                                (<i>RecommendedCourse</i> components)
-                                                                                are
-                                                                                worth analyzing.
-                                                                            </p>
-                                                                        </li>
-                                                                    </ol>
+                                                                    <div class="section-content container">
+                                                                        <h4>Relevant Views</h4>
+                                                                        <ol>
+
+                                                                            <li class="py-2">
+                                                                                <h5>Search Tab, Cart Tab
+                                                                                </h5>
+                                                                                <img class="my-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/before/course_comp_stacked.PNG"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>React Component:
+                                                                                    </strong><i>Course</i>
+                                                                                </p>
+                                                                                <p><strong>Justification: </strong>These
+                                                                                    two
+                                                                                    views showcase the primary
+                                                                                    functionality
+                                                                                    of the course enrollment
+                                                                                    application.
+                                                                                    That primary functionality is built
+                                                                                    upon
+                                                                                    <i>Course</i> components.
+                                                                                </p>
+                                                                            </li>
+                                                                            <li class="py-2">
+                                                                                <h5>Completed Courses Tab
+                                                                                </h5>
+                                                                                <img class="my-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/before/completed_course_comp_01.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>React Component:
+                                                                                    </strong><i>CompletedCourse</i>
+                                                                                </p>
+                                                                                <p><strong>Justification: </strong>
+                                                                                    Given
+                                                                                    that the Completed Courses Tab view
+                                                                                    is
+                                                                                    one of four views in our app, and
+                                                                                    that
+                                                                                    it's necessary in generating
+                                                                                    recommended
+                                                                                    courses, its building blocks
+                                                                                    (<i>CompletedCourse</i> components)
+                                                                                    are
+                                                                                    worth analyzing.
+                                                                                </p>
+                                                                            </li>
+                                                                            <li class="py-2">
+                                                                                <h5>Recommended Courses Tab</h5>
+                                                                                <img class="my-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/before/recommended_course_comp_01.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>Relevant Views:
+                                                                                    </strong>Recommended Courses Tab</p>
+                                                                                <p><strong>React Component:
+                                                                                    </strong><i>RecommendedCourse</i>
+                                                                                </p>
+                                                                                <p><strong>Justification: </strong>
+                                                                                    Given
+                                                                                    that the Recommended Courses Tab
+                                                                                    view is
+                                                                                    one of four views in our app, its
+                                                                                    building blocks
+                                                                                    (<i>RecommendedCourse</i>
+                                                                                    components)
+                                                                                    are
+                                                                                    worth analyzing.
+                                                                                </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1245,23 +1406,34 @@
                                                                         Potential Violations of Heuristics
                                                                     </h4>
                                                                     <ul>
-                                                                        <li>
-                                                                            <p><strong>Violations 01-03</strong></p>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_01.PNG"
+                                                                        <li class="py-2">
+                                                                            <h5>Violations 01-03</h5>
+                                                                            <img class="mt-2"
+                                                                                src="/projects/fall2021/design/react/photos/heuristics/before/violations_01.PNG"
                                                                                 width="100%" height="auto" alt="...">
                                                                         </li>
-                                                                        <li>
-                                                                            <p><strong>Violations 04-05</strong></p>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_02.PNG"
+                                                                        <li class="py-2">
+                                                                            <h5>Violations 04-05</h5>
+                                                                            <img class="mt-2"
+                                                                                src="/projects/fall2021/design/react/photos/heuristics/before/violations_02.PNG"
                                                                                 width="100%" height="auto" alt="...">
+                                                                            <p><i class="text-danger">Note:
+                                                                                </i><small>Violation 05 was poorly
+                                                                                    described at the time of this
+                                                                                    assignment. It can be either
+                                                                                    disregarded, or instead, let it
+                                                                                    represent minor
+                                                                                    styling issues.</small></p>
                                                                         </li>
-                                                                        <li>
-                                                                            <p><strong>Violations 06-08</strong></p>
-                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_03.png"
+                                                                        <li class="py-2">
+                                                                            <h5>Violations 06-08</h5>
+                                                                            <img class="mt-2"
+                                                                                src="/projects/fall2021/design/react/photos/heuristics/before/violations_03.png"
                                                                                 width="100%" height="auto" alt="...">
                                                                         </li>
                                                                     </ul>
-                                                                    <h5>Violations Table</h5>
+                                                                    <hr class="mw-100 bg-dark">
+                                                                    <h4>Violations Table</h4>
                                                                     <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_table.png"
                                                                         width="100%" height="auto" alt="...">
                                                                 </div>
@@ -1455,15 +1627,15 @@
                                                                     </div>
                                                                     <hr class="mw-100 bg-dark">
                                                                     <div class="container-fluid">
-                                                                        <h5 class="py-2">Post Heuristic Eval Updates
-                                                                        </h5>
+                                                                        <h4 class="py-2">Post Heuristic Eval Updates
+                                                                        </h4>
                                                                         <ol>
-                                                                            <li>
-                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/course_selection.jpg"
+                                                                            <li class="py-2">
+                                                                                <h5>Course Selection Tab</h5>
+                                                                                <img class="mt-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/after/course_selection.jpg"
                                                                                     width="100%" height="auto"
                                                                                     alt="...">
-                                                                                <p><strong>Relevant Views:
-                                                                                    </strong>Course Selection Tab</p>
                                                                                 <p><strong>Updates: </strong>
                                                                                 <ul>
                                                                                     <li>
@@ -1480,12 +1652,12 @@
                                                                                 </ul>
                                                                                 </p>
                                                                             </li>
-                                                                            <li>
-                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/completed_course.jpg"
+                                                                            <li class="py-2">
+                                                                                <h5>Completed Courses Tab</h5>
+                                                                                <img class="mt-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/after/completed_course.jpg"
                                                                                     width="100%" height="auto"
                                                                                     alt="...">
-                                                                                <p><strong>Relevant Views:
-                                                                                    </strong>Completed Course Tab</p>
                                                                                 <p><strong>Updates: </strong>
                                                                                 <ul>
                                                                                     <li>
@@ -1494,12 +1666,12 @@
                                                                                 </ul>
                                                                                 </p>
                                                                             </li>
-                                                                            <li>
-                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
+                                                                            <li class="py-2">
+                                                                                <h5>Recommended Courses Tab</h5>
+                                                                                <img class="mt-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
                                                                                     width="100%" height="auto"
                                                                                     alt="...">
-                                                                                <p><strong>Relevant Views:
-                                                                                    </strong>Recommended Courses Tab</p>
                                                                                 <p><strong>Updates: </strong>
                                                                                 <ul>
                                                                                     <li>
@@ -1511,20 +1683,28 @@
                                                                                         Tabs.
                                                                                     </li>
                                                                                     <li>
-                                                                                        <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
+                                                                                        <h6>Recommended Courses Tab
+                                                                                            (Empty)</h6>
+                                                                                        <img class="mt-2"
+                                                                                            src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
                                                                                             width="100%" height="auto"
                                                                                             alt="...">
-                                                                                        <p>Helper Text When Empty</p>
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <p>Helper Text When
+                                                                                                    Empty</p>
+                                                                                            </li>
+                                                                                        </ul>
                                                                                     </li>
                                                                                 </ul>
                                                                                 </p>
                                                                             </li>
-                                                                            <li>
-                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
+                                                                            <li class="py-2">
+                                                                                <h5>Course Cart Tab</h5>
+                                                                                <img class="mt-2"
+                                                                                    src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
                                                                                     width="100%" height="auto"
                                                                                     alt="...">
-                                                                                <p><strong>Relevant Views:
-                                                                                    </strong>Course Cart Tab</p>
                                                                                 <p><strong>Updates: </strong>
                                                                                 <ul>
                                                                                     <li>
@@ -1535,17 +1715,30 @@
                                                                                         Checkmark In This Tab
                                                                                     </li>
                                                                                     <li>
-                                                                                        <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
+                                                                                        <h6>Course Cart (Empty)</h6>
+                                                                                        <img class="mt-2"
+                                                                                            src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
                                                                                             width="100%" height="auto"
                                                                                             alt="...">
-                                                                                        <p>Helper Text Added When Empty
-                                                                                        </p>
-                                                                                        <p><i>Note: </i><small>In
-                                                                                                hindsight, I should've
-                                                                                                added "To add courses to
-                                                                                                your cart, go to the
-                                                                                                Course Selection
-                                                                                                tab."</small></p>
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <p>Helper Text When
+                                                                                                    Empty</p>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <p><i>Note:
+                                                                                                    </i><small>In
+                                                                                                        hindsight, I
+                                                                                                        should've
+                                                                                                        added "To add
+                                                                                                        courses to
+                                                                                                        your cart, go to
+                                                                                                        the
+                                                                                                        Course Selection
+                                                                                                        tab."</small>
+                                                                                                </p>
+                                                                                            </li>
+                                                                                        </ul>
                                                                                     </li>
                                                                                 </ul>
                                                                                 </p>
@@ -1568,10 +1761,11 @@
                 <!-- Section Navigation for larger screens -->
                 <div class="d-none d-lg-inline col-3">
                     <div class="container-fluid border rounded border-dark bg-dark text-light text-center py-2">
-                        <h5>Project Directories</h5>
+                        <h5>UX/UI Design Project Directories</h5>
                         <hr class="border w-100">
                         <ul
                             class="nav flex-column border rounded border-dark align-content-center align-items-center bg-light text-dark">
+                            <hr class="border w-75">
                             <li class="nav-item">
                                 <a class="nav-link" href="/projects/fall2021/design/bootstrap/wisc_shop.html">Web
                                     Design
@@ -1589,6 +1783,7 @@
                                     (React
                                     Native): Badger Fitness</a>
                             </li>
+                            <hr class="border w-75">
                         </ul>
                     </div>
                 </div>
