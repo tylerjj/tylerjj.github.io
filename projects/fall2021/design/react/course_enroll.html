@@ -271,15 +271,23 @@
                                                     Implemented</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <p><a href="/projects/fall2021/design/react/course_enroll.html#week_04">Week
-                                                04</a></p>
-                                        <ul>
-                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#h_eval">Heuristic
-                                                    Evalutation of Week 03</a></li>
-                                            <li><a href="/projects/fall2021/design/react/course_enroll.html#h_implem">Implementation
-                                                    of Updated Heuristics</a></li>
-                                        </ul>
+                                    <li><a href="/projects/fall2021/design/react/course_enroll.html#week_04"
+                                            onclick="loadAnchor(['collapseFour'],'/projects/fall2021/design/react/course_enroll.html#week_04')">Week
+                                            04</a></li>
+                                    <ul>
+                                        <li><a href="/projects/fall2021/design/react/course_enroll.html#find_focus"
+                                                onclick="loadAnchor(['collapseFour', 'collapseOneWeek04'],'/projects/fall2021/design/react/course_enroll.html#find_focus')">Finding
+                                                a Focus for Evaluation</a></li>
+                                        <li><a href="/projects/fall2021/design/react/course_enroll.html#pot_violations"
+                                                onclick="loadAnchor(['collapseFour', 'collapseThreeWeek04'],'/projects/fall2021/design/react/course_enroll.html#pot_violations')">Identifying
+                                                Potential Violations</a></li>
+                                        <li><a href="/projects/fall2021/design/react/course_enroll.html#recommended_fixes"
+                                                onclick="loadAnchor(['collapseFour', 'collapseFourWeek04'],'/projects/fall2021/design/react/course_enroll.html#recommended_fixes')">Recommended
+                                                Fixes</a></li>
+                                        <li><a href="/projects/fall2021/design/react/course_enroll.html#recommended_fixes_implem"
+                                                onclick="loadAnchor(['collapseFour', 'collapseFiveWeek04'],'/projects/fall2021/design/react/course_enroll.html#recommended_fixes_implem')">Implementation
+                                                of Recommendations</a></li>
+                                    </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -1077,6 +1085,479 @@
                                             <p>For more information, see a <a
                                                     href="https://github.com/tylerjj/course_catalog_v2#readme">full
                                                     writeup of assignment deliverables.</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Week 04: Heuristic Evaluation, Recommendations, and Fixes
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div id="week_04" class="week04_row row">
+                                        <div class="col">
+                                            <p>
+                                            <h4 class="display-4 d-md-inline d-none">Week 04: Heuristic Evaluation,
+                                                Recommendations, and Fixes</h4>
+                                            <h4 class="d-xs-inline d-md-none">Week 04: Heuristic Evaluation,
+                                                Recommendations, and Fixes
+                                            </h4>
+                                            </p>
+                                            <video width="100%" height="auto" controls="">
+                                                <source src="/projects/fall2021/design/react/videos/week04_demo.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h4 class="">
+                                                Heuristics Cheatsheet
+                                            </h4>
+                                            <img src="/projects/fall2021/design/react/photos/heuristics/heuristics_cheatsheet.png"
+                                                width="100%" height="auto" alt="...">
+                                            <p><strong>Image Source:
+                                                </strong><a
+                                                    href="https://uxdesign.cc/10-usability-heuristics-every-designer-should-know-129b9779ac53">UX
+                                                    Collective</a></p>
+                                            <p>These heuristics are what we will be
+                                                evaluating our components against.</p>
+                                            <div class="accordion" id="accordionWeek04">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOneWeek04">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseOneWeek04" aria-expanded="true"
+                                                                aria-controls="collapseOneWeek04">
+                                                                Finding a Focus for Evaluation</button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOneWeek04" class="collapse"
+                                                        aria-labelledby="headingOneWeek04"
+                                                        data-parent="#accordionWeek04">
+                                                        <div class="card-body">
+                                                            <div id="find_focus" class="container-fluid">
+                                                                <div class="container mb-2">
+                                                                    <div class="section-description container-fluid">
+                                                                        <h4 class="">
+                                                                            Finding a Focus for Evaluation
+                                                                        </h4>
+                                                                        <p>In this step, the Week 03 Course Catalog
+                                                                            iteration will be
+                                                                            analyzed with the goal of finding 3-5
+                                                                            "components" that are highly consequential
+                                                                            for
+                                                                            user experience.</p>
+                                                                        <p><strong>From the Assignment Specs:
+                                                                            </strong>In
+                                                                            real life, your application might have
+                                                                            hundreds
+                                                                            of components, screens, or pages, and you
+                                                                            will
+                                                                            have to focus your efforts on a limited set
+                                                                            that
+                                                                            will make the most difference in terms of
+                                                                            effectiveness and user experience.</p>
+                                                                    </div>
+                                                                    <ol>
+                                                                        <li>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/course_comp_stacked.PNG"
+                                                                                width="100%" height="auto" alt="...">
+                                                                            <p><strong>Relevant Views: </strong>Search
+                                                                                Tab,
+                                                                                Cart Tab</p>
+                                                                            <p><strong>React Component:
+                                                                                </strong><i>Course</i>
+                                                                            </p>
+                                                                            <p><strong>Justification: </strong>These two
+                                                                                views showcase the primary functionality
+                                                                                of the course enrollment application.
+                                                                                That primary functionality is built upon
+                                                                                <i>Course</i> components.
+                                                                            </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/completed_course_comp_01.jpg"
+                                                                                width="100%" height="auto" alt="...">
+                                                                            <p><strong>Relevant Views:
+                                                                                </strong>Completed Courses Tab</p>
+                                                                            <p><strong>React Component:
+                                                                                </strong><i>CompletedCourse</i>
+                                                                            </p>
+                                                                            <p><strong>Justification: </strong> Given
+                                                                                that the Completed Courses Tab view is
+                                                                                one of four views in our app, and that
+                                                                                it's necessary in generating recommended
+                                                                                courses, its building blocks
+                                                                                (<i>CompletedCourse</i> components) are
+                                                                                worth analyzing.
+                                                                            </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/recommended_course_comp_01.jpg"
+                                                                                width="100%" height="auto" alt="...">
+                                                                            <p><strong>Relevant Views:
+                                                                                </strong>Recommended Courses Tab</p>
+                                                                            <p><strong>React Component:
+                                                                                </strong><i>RecommendedCourse</i>
+                                                                            </p>
+                                                                            <p><strong>Justification: </strong> Given
+                                                                                that the Recommended Courses Tab view is
+                                                                                one of four views in our app, its
+                                                                                building blocks
+                                                                                (<i>RecommendedCourse</i> components)
+                                                                                are
+                                                                                worth analyzing.
+                                                                            </p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThreeWeek04">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThreeWeek04" aria-expanded="false"
+                                                                aria-controls="collapseThreeWeek04">
+                                                                Potential Violations
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThreeWeek04" class="collapse"
+                                                        aria-labelledby="headingThreeWeek04"
+                                                        data-parent="#accordionWeek04">
+                                                        <div class="card-body">
+                                                            <div id="pot_violations" class="container-fluid">
+                                                                <div class="container mb-2">
+                                                                    <h4 class="">
+                                                                        Potential Violations of Heuristics
+                                                                    </h4>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p><strong>Violations 01-03</strong></p>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_01.PNG"
+                                                                                width="100%" height="auto" alt="...">
+                                                                        </li>
+                                                                        <li>
+                                                                            <p><strong>Violations 04-05</strong></p>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_02.PNG"
+                                                                                width="100%" height="auto" alt="...">
+                                                                        </li>
+                                                                        <li>
+                                                                            <p><strong>Violations 06-08</strong></p>
+                                                                            <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_03.png"
+                                                                                width="100%" height="auto" alt="...">
+                                                                        </li>
+                                                                    </ul>
+                                                                    <h5>Violations Table</h5>
+                                                                    <img src="/projects/fall2021/design/react/photos/heuristics/before/violations_table.png"
+                                                                        width="100%" height="auto" alt="...">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFourWeek04">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFourWeek04" aria-expanded="false"
+                                                                aria-controls="collapseFourWeek04">
+                                                                Recommended Fixes
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFourWeek04" class="collapse"
+                                                        aria-labelledby="headingFourWeek04"
+                                                        data-parent="#accordionWeek04">
+                                                        <div class="card-body">
+                                                            <div id="recommended_fixes" class="container-fluid">
+                                                                <div class="container mb-2">
+                                                                    <h4 class="mt-2">Recommended Fixes</h4>
+                                                                    <table class="table tableRecommendedFixes">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">Violation #</th>
+                                                                                <th scope="col">Recommendation</th>
+                                                                                <th scope="col">Feasibility(Yes/No)</th>
+                                                                                <th scope="col">Severity</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody>
+                                                                            <tr class="table-warning">
+                                                                                <th scope="row">03</th>
+                                                                                <td>Provide an FAQ or site
+                                                                                    documentation page to offer guidance
+                                                                                    on app’s services.</td>
+                                                                                <td>Yes</td>
+                                                                                <td>Medium</td>
+                                                                            </tr>
+                                                                            <tr class="table-warning">
+                                                                                <th scope="row">03</th>
+                                                                                <td>Provide a Contact section in order
+                                                                                    to give the user access to some live
+                                                                                    staff that
+                                                                                    can help them with their issue.</td>
+                                                                                <td>No</td>
+                                                                                <td>Medium</td>
+                                                                            </tr>
+                                                                            <tr class="table-warning">
+                                                                                <th scope="row">06, 08</th>
+                                                                                <td> Implement the View Section, Add to
+                                                                                    Section, Remove from
+                                                                                    Section functionality on the
+                                                                                    RecommendedCourse component.
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Medium</td>
+                                                                            </tr>
+                                                                            <tr class="table-warning">
+                                                                                <th scope="row">(Extra Violation)</th>
+                                                                                <td>Inability to undo a “remove
+                                                                                    course” when in the Cart view.
+                                                                                    Implement this
+                                                                                    functionality.
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Medium</td>
+                                                                            </tr>
+                                                                            <tr class="table-success">
+                                                                                <th scope="row">01</th>
+                                                                                <td>Provide a visual indication of
+                                                                                    whether a course is added or not
+                                                                                    (without having to click view
+                                                                                    sections.)
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Low</td>
+                                                                            </tr>
+                                                                            <tr class="table-success">
+                                                                                <th scope="row">02</th>
+                                                                                <td>Provide a visual indication that
+                                                                                    courses can be added (without having
+                                                                                    to click view sections).
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Low</td>
+                                                                            </tr>
+                                                                            <tr class="table-success">
+                                                                                <th scope="row">04, 07</th>
+                                                                                <td> Customize the cards in
+                                                                                    <i>Course</i>
+                                                                                    <i>RecommendedCourse</i> and
+                                                                                    <i>CompletedCourse</i> to be more
+                                                                                    uniform in their
+                                                                                    representation of data.
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Low</td>
+                                                                            </tr>
+                                                                            <tr class="table-success">
+                                                                                <th scope="row">05</th>
+                                                                                <td> Style and/or add headers to each
+                                                                                    page describing the page’s
+                                                                                    functionality.
+                                                                                </td>
+                                                                                <td>Yes</td>
+                                                                                <td>Low</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFiveWeek04">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseFiveWeek04" aria-expanded="false"
+                                                                aria-controls="collapseFiveWeek04">
+                                                                Implementation of Recommendations
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseFiveWeek04" class="collapse"
+                                                        aria-labelledby="headingFiveWeek04"
+                                                        data-parent="#accordionWeek04">
+                                                        <div class="card-body">
+                                                            <div id="recommended_fixes_implem" class="container-fluid">
+                                                                <div class="container mb-2">
+                                                                    <div class="section-description container-fluid">
+                                                                        <h4 class="">
+                                                                            Implementation of Recommendations
+                                                                        </h4>
+                                                                        <p>In this step, at least three "feasible"
+                                                                            recommendations from the previous step were
+                                                                            to
+                                                                            be implemented.</p>
+                                                                        <p><strong>Summary of Heuristic Evaluation
+                                                                                Outcome:
+                                                                            </strong></p>
+                                                                        <p class=""><i class="text-danger">Note:
+                                                                            </i><small> One major
+                                                                                oversight was that the application opens
+                                                                                on
+                                                                                an empty screen, requiring the user to
+                                                                                click
+                                                                                one of the top tabs in order to present
+                                                                                functionality. This was unintended and
+                                                                                needs to be fixed. </small></p>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p><strong>Recognition vs. Recall:
+                                                                                    </strong> Informative headers added
+                                                                                    to aid with user guidance.
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><strong>Task Status Visibility:
+                                                                                    </strong>
+                                                                                    Each course that is added is denoted
+                                                                                    by a green checkmark and darker
+                                                                                    background in order to set it apart
+                                                                                    from un-added courses.
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><strong>Consistency: </strong>Various
+                                                                                    components had their styling changed
+                                                                                    in order to better match one
+                                                                                    another.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p><strong>Final Thoughts:
+                                                                                    </strong>These easy updates only
+                                                                                    took me
+                                                                                    around two
+                                                                                    hours to implement, which is very
+                                                                                    reasonable
+                                                                                    in the grand scheme of a large
+                                                                                    project.</p>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <hr class="mw-100 bg-dark">
+                                                                    <div class="container-fluid">
+                                                                        <h5 class="py-2">Post Heuristic Eval Updates
+                                                                        </h5>
+                                                                        <ol>
+                                                                            <li>
+                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/course_selection.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>Relevant Views:
+                                                                                    </strong>Course Selection Tab</p>
+                                                                                <p><strong>Updates: </strong>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Header Added
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <i>Added to Cart</i> Indicator
+                                                                                        Added
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <i>Course</i> Component Visually
+                                                                                        Uniform With Application.
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/completed_course.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>Relevant Views:
+                                                                                    </strong>Completed Course Tab</p>
+                                                                                <p><strong>Updates: </strong>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Header Added
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>Relevant Views:
+                                                                                    </strong>Recommended Courses Tab</p>
+                                                                                <p><strong>Updates: </strong>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Header Added
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Dropdown Added to Give
+                                                                                        Consistency With Selection/Cart
+                                                                                        Tabs.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
+                                                                                            width="100%" height="auto"
+                                                                                            alt="...">
+                                                                                        <p>Helper Text When Empty</p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course.jpg"
+                                                                                    width="100%" height="auto"
+                                                                                    alt="...">
+                                                                                <p><strong>Relevant Views:
+                                                                                    </strong>Course Cart Tab</p>
+                                                                                <p><strong>Updates: </strong>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Header Added
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Course Card Doesn't Show Green
+                                                                                        Checkmark In This Tab
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <img src="/projects/fall2021/design/react/photos/heuristics/after/recommended_course_empty.jpg"
+                                                                                            width="100%" height="auto"
+                                                                                            alt="...">
+                                                                                        <p>Helper Text Added When Empty
+                                                                                        </p>
+                                                                                        <p><i>Note: </i><small>In
+                                                                                                hindsight, I should've
+                                                                                                added "To add courses to
+                                                                                                your cart, go to the
+                                                                                                Course Selection
+                                                                                                tab."</small></p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
